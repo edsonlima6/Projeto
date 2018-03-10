@@ -1,0 +1,2 @@
+Infrastructure:
+Camada responsável por fornecer recursos técnicos que darão suporte as camadas superiores. (Conexão e persistência de dados, Envio de mensagens por rede, Leitura de discdos, etc).

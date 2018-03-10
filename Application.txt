@@ -1,0 +1,2 @@
+Application:
+Camada responsável por conectar a interface do usuario com as camadas inferiores (Dominio e Infraestrutura).

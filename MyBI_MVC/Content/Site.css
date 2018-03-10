@@ -1,0 +1,53 @@
+﻿body {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    /*background-color: #301822;*/
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.modal-header, h4, .close {
+    background-color: #657bde;
+    color: white !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-footer {
+    background-color: #f9f9f9;
+}
+
+
+/*.emorroida{
+    background-color:brown;
+    margin:0;
+    padding:0;
+}
+ul.teste{
+    width:100%;
+    list-style-type:none;
+    margin:0;
+    padding:0px;
+}
+
+ul.teste :hover {
+    text-decoration:none;
+    background-color:aqua;
+}*/

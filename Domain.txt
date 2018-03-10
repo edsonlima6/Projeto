@@ -1,0 +1,2 @@
+Domain:
+Camada responsável por manter os conceitos e regras do negocio (Entidades, Atributos,Comportamentos etc).

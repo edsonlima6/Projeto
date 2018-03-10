@@ -1,0 +1,2 @@
+Presentation:
+Camada responsável pela exibição de informações do sistema ao usuário e também interpretar os comandos efetuados por este.

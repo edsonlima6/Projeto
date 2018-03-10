@@ -1,0 +1,2 @@
+Services:
+Camada que possibilita consumir a aplicação por algum outro serviço ou aplicação. (WCF)

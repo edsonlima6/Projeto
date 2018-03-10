@@ -1,0 +1,41 @@
+﻿body {
+}
+#centerForm{
+    margin-left:100px;
+    margin-right:50px;
+}
+
+.displayModel{
+    display:block !important;
+}
+
+.retiraBorder{
+    border-right:none !important;
+}
+.alig-form {
+    margin-left:35%;
+
+}
+
+.aligCenter {
+    position: center;
+    margin: 20px;
+    border: 1px, solid, blue;
+}
+
+.erroLogin {
+    color:red;
+    display:none;
+    font:bold 14px arial;
+    text-align:center;
+}
+
+@media only screen and (max-width: 500px) {
+    #centerForm{
+        margin:0;
+    }
+
+    .alig-form{
+        margin-left:15%;
+    }
+}

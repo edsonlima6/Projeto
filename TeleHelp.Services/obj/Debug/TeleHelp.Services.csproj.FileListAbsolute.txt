@@ -1,0 +1,16 @@
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\bin\Debug\TeleHelp.Services.dll.config
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\bin\Debug\TeleHelp.Services.dll
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\bin\Debug\TeleHelp.Services.pdb
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\bin\Debug\TeleHelp.Application.dll
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\bin\Debug\TeleHelp.Domain.dll
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\bin\Debug\FluentValidation.dll
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\bin\Debug\EntityFramework.dll
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\bin\Debug\TeleHelp.Application.pdb
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\bin\Debug\TeleHelp.Domain.pdb
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\bin\Debug\TeleHelp.Domain.dll.config
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\bin\Debug\FluentValidation.xml
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\bin\Debug\EntityFramework.xml
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\obj\Debug\TeleHelp.Services.csprojResolveAssemblyReference.cache
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\obj\Debug\TeleHelp.Services.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\obj\Debug\TeleHelp.Services.dll
+C:\Desenvolvimento\Help System 2.0\TeleHelp.Services\obj\Debug\TeleHelp.Services.pdb

@@ -1,0 +1,22 @@
+﻿body {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #301822;
+}
+.removePg {
+    background-color: brown;
+    margin: 0;
+    padding: 0;
+}
+
+.alinhaUl{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.alinhaUl :hover{
+    text-decoration: none;
+    background-color: aqua;
+}
