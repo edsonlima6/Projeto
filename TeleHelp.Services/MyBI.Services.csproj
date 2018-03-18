@@ -49,10 +49,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\TeleHelp.Application\MyBI.Application.csproj">
       <Project>{aea37fb0-cbab-43de-99d1-da75e19b4153}</Project>
       <Name>MyBI.Application</Name>
