@@ -9,16 +9,15 @@ namespace MyBI_MVC.Controllers
 {
     public class HomeController : Controller
     {
+        IClienteModel _clienteModel;
+        public HomeController(IClienteModel clienteModel)
+        {
+            _clienteModel = clienteModel;
+        }
+
         [HttpGet]
         public ActionResult Index()
         {
-            //Quinto commit mlk doido
-            //using (var con = new CorreioService.AtendeClienteClient())
-            //{
-            //    var enderecoCliente = con.consultaCEP("06226130");
-
-
-            //}
 
             return View();
         }

@@ -11,7 +11,7 @@ namespace MyBI_MVC.Models
         [Required(ErrorMessage ="E-MAIL É OBRIGATÓRIO")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "SENHA É OBRIGATÓRIO")]
+        //[Required(ErrorMessage = "SENHA É OBRIGATÓRIO")]
         public string Senha { get; set; }
     }
 }

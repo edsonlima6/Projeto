@@ -10,113 +10,57 @@
     @Styles.Render("~/Content/Login")
 </head>
 <body>
-    @model  MyBI_MVC.Models.UsuarioVM
-    <div class="navbar navbar-inverse"> @*navbar-fixed-top*@
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+   
+    <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                </ul>
-                <ul class="nav navbar-nav navbar-right navbar-collapse">
-                    <li><a href="#" class="btn btn-sm" id="myBtn">Login</a></li>
-
-                </ul>
-            </div>
-
-
-        </div>
-    </div>
-    <div class="container body-content">
-        
-        
-        @RenderBody()
-
-       
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content retiraBorder">
-                <div class="modal-header" style="padding:35px 50px;">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
-                </div>
-                <div class="modal-body" style="padding:40px 50px;">
-                    <div class="row">
-                        <div id="centerForm">
-
-
-                            <span class="erroLogin"></span>
-
-
-                            @using (Html.BeginForm("Index", "Home", FormMethod.Post, new
-                            { @class = "form-signin", role = "form" }))
-                            {
-                                @Html.AntiForgeryToken()
-                                @Html.ValidationSummary()
-
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-envelope"></span>
-                                        </span>
-                                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Digite seu Email", @id = "txtEmail" })
-
-                                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
                                 </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-lock"></span>
-                                            </span>
-                                            @Html.TextBoxFor(m => m.Senha, new { @class = "form-control", @placeholder = "Digite sua senha", @id = "txtSenha" })
-                                            @*@Html.ValidationMessageFor(m => m.Senha)*@
-                                        </div>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="" checked>Remember me</label>
-                                    </div>
-                                    <div class="checkbox">
+                            </li>
 
-                                        <button type="submit" class="btn btn-success" id="btnSubmit"><span class="glyphicon glyphicon-off"></span> Entrar</button>
-                                        @*<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>*@
-                                    </div>
-
-
-
-                            }
-                        </div>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Disabled</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="modal-footer">
+                </nav>
+            
 
-                    <p>Não é um membro? <a href="#">Cadastre-se</a></p>
-                    <p>Esqueceu <a href="#"> a senha?</a></p>
-                </div>
-            </div>
+        <div class="row">
+            <div class="container body-content">
+                @model  MyBI_MVC.Models.UsuarioVM
+                    @RenderBody()
 
+                </div>
         </div>
-    </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/Scripts/Login/LoginJs")
-    @RenderSection("scripts", required: false)
-
+           
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/Scripts/Login/LoginJs")
+        @RenderSection("scripts", required: false)
+  </div>
 </body>
 
 

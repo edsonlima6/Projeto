@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using MyBI_MVC.App_Start;
 
 namespace MyBI_MVC
 {
@@ -16,6 +17,7 @@ namespace MyBI_MVC
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            MyBI_MVC.App_Start.Ninject.ConfigurarDependencias();
         }
     }
 }
