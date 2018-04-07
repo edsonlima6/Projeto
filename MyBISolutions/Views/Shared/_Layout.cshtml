@@ -1,0 +1,116 @@
+﻿@model  MyBISolutions.Models.UsuarioModel
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container-fluid">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                 <a class="navbar-brand" href="#">BI Solutions</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item" id="">
+                            <a class="" id="btnLogin" href="#" data-toggle="modal" , data-target="#modalLogin">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        <br />     
+        <div class="row">
+            <div class="container body-content">
+
+                @RenderBody()
+
+            </div>
+        </div>
+
+
+        @* Modal *@
+        <div class="card-footer">
+            <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content retiraBorder">
+                        <div class="modal-header">
+                            <h6 class="modal-title text-center" id="exampleModalLongTitle">Area do Cliente</h6>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                @*<div class="col-8  mx-auto">*@
+                                    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "col-8  mx-auto" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        //HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
+                                        @Html.ValidationSummary()
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Nome)
+                                            @Html.TextBoxFor(m => m.Nome, new { @class = " form-control form-control-sm", type = "email", required = "required" })
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.LabelFor(m => m.Senha)
+                                            @Html.PasswordFor(m => m.Senha, new { @class = "form-control form-control-sm", required = "required" })
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary ">Entrar</button>
+                                            <button type="button" class="btn btn-outline-success ml-sm-1" data-dismiss="modal">Cadastre-se</button>
+                                        </div>
+                                        
+                                    }
+                                @*</div>*@
+                            </div>
+                        </div>
+                        @*@<div class="modal-footer">
+                            
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                        </div>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/Scripts/Login/LoginJs")
+        @Styles.Render("~/Content/Login")
+        @RenderSection("scripts", required: false)
+    </div>
+</body>
+
+
+</html>

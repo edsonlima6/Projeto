@@ -31,10 +31,14 @@ C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\TeleHelp.Domain.d
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\TeleHelp.Domain.pdb
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\EntityFramework.dll
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\FluentValidation.dll
-C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\FluentValidation.Mvc.dll
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\EntityFramework.xml
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\obj\Debug\MyBI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\obj\Debug\TeleHelp.Domain.dll
+C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\obj\Debug\TeleHelp.Domain.pdb
+C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\obj\Debug\MyBI.Domain.csprojResolveAssemblyReference.cache
+C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\FluentValidation.dll
+C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\FluentValidation.Mvc.dll
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\FluentValidation.pdb
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\FluentValidation.xml
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\FluentValidation.Mvc.pdb
@@ -50,7 +54,3 @@ C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\pt\FluentValidati
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\ru\FluentValidation.resources.dll
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\sv\FluentValidation.resources.dll
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\bin\Debug\tr\FluentValidation.resources.dll
-C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\obj\Debug\MyBI.Domain.csprojResolveAssemblyReference.cache
-C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\obj\Debug\MyBI.Domain.csproj.CoreCompileInputs.cache
-C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\obj\Debug\TeleHelp.Domain.dll
-C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Domain\obj\Debug\TeleHelp.Domain.pdb

@@ -4,20 +4,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TeleHelp.Application.Interface;
 
 namespace MyBI_MVC.Controllers
 {
     public class HomeController : Controller
     {
         IClienteModel _clienteModel;
-        public HomeController(IClienteModel clienteModel)
+        IUsuarioAplication usuarioApplication;
+        public HomeController()
         {
-            _clienteModel = clienteModel;
+
         }
 
         [HttpGet]
         public ActionResult Index()
         {
+            //usuarioApplication.Add(new TeleHelp.Domain.Entities.Usuario
+            //{
+            //    Ativo = true,
+            //    DataCadastro = DateTime.Now,
+            //    Email = "edsonlima6@gmail.com",
+            //    IdTipoAtendimento = 1,
+            //    Login = "efeitosa"
+            //});
+            //usuarioApplication.SaveChanges();
+         
 
             return View();
         }

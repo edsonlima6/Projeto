@@ -1,0 +1,102 @@
+﻿@model  MyBI_MVC.Models.UsuarioVM
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item" id="">
+                        <a class="" id="btnLogin" href="#" data-toggle="modal" , data-target="#modalLogin">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="row">
+            <div class="container body-content">
+               
+                @RenderBody()
+
+            </div>
+        </div>
+
+
+        @* Modal *@
+        <div class="card-footer">
+            <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content retiraBorder">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            
+
+                        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+                        {
+
+
+                            @Html.LabelFor(m => m.Nome, new { @class = "" })
+                            @Html.EditorFor(m => m.Nome) 
+
+
+                        }
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/Scripts/Login/LoginJs")
+        @Styles.Render("~/Content/Login")
+        @RenderSection("scripts", required: false)
+    </div>
+</body>
+
+
+</html>

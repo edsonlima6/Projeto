@@ -10,10 +10,5 @@ namespace TeleHelp.Application.Interface
 {
     public interface IUsuarioAplication : IAplicationBase<Usuario>
     {
-        IList<string> ValidaLogin(string login, string senha);
-        bool AddUsuario(IUsuarioDTO usuarioDTO);
-        IList<GrupoUsuario> GetListaGrupoUsuario(int idUsuario);
-        RepresentanteUsuario GetRepresentanteUsuario(int idUsuario);
-        bool RemoveALLUsuario(IUsuarioDTO usuarioDTO);
     }
 }

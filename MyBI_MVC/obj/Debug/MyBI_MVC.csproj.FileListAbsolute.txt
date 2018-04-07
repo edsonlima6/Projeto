@@ -212,3 +212,6 @@ C:\Users\edson\Documents\GitHub\MyBI\MyBI_MVC\bin\pt\FluentValidation.resources.
 C:\Users\edson\Documents\GitHub\MyBI\MyBI_MVC\bin\ru\FluentValidation.resources.dll
 C:\Users\edson\Documents\GitHub\MyBI\MyBI_MVC\bin\sv\FluentValidation.resources.dll
 C:\Users\edson\Documents\GitHub\MyBI\MyBI_MVC\bin\tr\FluentValidation.resources.dll
+C:\Users\edson\Documents\GitHub\MyBI\MyBI_MVC\bin\TeleHelp.Infraestrutura.Data.dll
+C:\Users\edson\Documents\GitHub\MyBI\MyBI_MVC\bin\TeleHelp.Infraestrutura.Data.pdb
+C:\Users\edson\Documents\GitHub\MyBI\MyBI_MVC\bin\TeleHelp.Infraestrutura.Data.dll.config

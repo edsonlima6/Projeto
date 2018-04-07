@@ -81,7 +81,7 @@ namespace TeleHelp.Domain.DTO
             set
             {
                 _turno = value;
-                Usuario.Turno = value;
+                //Usuario.Turno = value;
             }
         }
         TimeSpan? _hentrada;

@@ -63,7 +63,7 @@ namespace TeleHelp.Infraestrutura.Data.Repositorio
                 UsuarioBD.Matricula = usuario.Matricula;
                 UsuarioBD.Senha = usuario.Senha;
                 UsuarioBD.SenhaExtra = usuario.SenhaExtra;
-                UsuarioBD.Turno = usuario.Turno;
+               // UsuarioBD.Turno = usuario.Turno;
                 Update(UsuarioBD);
                 SaveChanges();
                 return;

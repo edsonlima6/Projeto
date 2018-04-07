@@ -51,7 +51,7 @@ namespace TeleHelp.Domain.Entities
 
         public int? Matricula { get; set; }
 
-        public int? Turno { get; set; }
+        //public int? Turno { get; set; }
 
         public TimeSpan? HorarioEntrada { get; set; }
 

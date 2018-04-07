@@ -1,4 +1,5 @@
 ﻿body {
+    
 }
 #centerForm{
     margin-left:100px;
@@ -9,8 +10,9 @@
     display:block !important;
 }
 
-.retiraBorder{
-    border-right:none !important;
+.retiraBorder {
+    border-right: none !important;
+    border-left: none !important;
 }
 .alig-form {
     margin-left:35%;
@@ -28,6 +30,15 @@
     display:none;
     font:bold 14px arial;
     text-align:center;
+}
+
+#btnLogin:hover {
+    color: white;
+    background-color: transparent !important;
+}
+
+.login {
+    color:white;
 }
 
 @media only screen and (max-width: 500px) {

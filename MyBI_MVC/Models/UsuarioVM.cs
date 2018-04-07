@@ -8,8 +8,8 @@ namespace MyBI_MVC.Models
 {
     public class UsuarioVM
     {
-        [Required(ErrorMessage ="E-MAIL É OBRIGATÓRIO")]
-        public string Email { get; set; }
+        [Required]
+        public string Nome { get; set; }
 
         //[Required(ErrorMessage = "SENHA É OBRIGATÓRIO")]
         public string Senha { get; set; }

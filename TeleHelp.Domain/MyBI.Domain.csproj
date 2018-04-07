@@ -67,10 +67,6 @@
     <Reference Include="System.Transactions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTO\CargoDTO.cs" />
-    <Compile Include="DTO\DepartamentoDTO.cs" />
-    <Compile Include="DTO\GrupoDTO.cs" />
-    <Compile Include="DTO\GruposDTO.cs" />
     <Compile Include="DTO\InterfacesDTO\ICargoDTO.cs" />
     <Compile Include="DTO\InterfacesDTO\IGrupoDTO.cs" />
     <Compile Include="DTO\InterfacesDTO\IUsuarioDTO.cs" />
@@ -90,60 +86,6 @@
     <Compile Include="Entities\Bonificacao.cs" />
     <Compile Include="Entities\BonificacaoTituloCliente.cs" />
     <Compile Include="Entities\BonificacaoCliente.cs" />
-    <Compile Include="Entities\Cadastro\Acao.cs" />
-    <Compile Include="Entities\Cadastro\Agenda.cs" />
-    <Compile Include="Entities\Cadastro\Alergia.cs" />
-    <Compile Include="Entities\Cadastro\AssistenciaMedica.cs" />
-    <Compile Include="Entities\Cadastro\AssistenciaMedicaHospital.cs" />
-    <Compile Include="Entities\Cadastro\Atendente.cs" />
-    <Compile Include="Entities\Cadastro\Banco.cs" />
-    <Compile Include="Entities\Cadastro\Cargo.cs" />
-    <Compile Include="Entities\Cadastro\Categoria.cs" />
-    <Compile Include="Entities\Cadastro\Cheque.cs" />
-    <Compile Include="Entities\Cadastro\Cidade.cs" />
-    <Compile Include="Entities\Cadastro\Combo.cs" />
-    <Compile Include="Entities\Cadastro\ComboServico.cs" />
-    <Compile Include="Entities\Cadastro\Comissao.cs" />
-    <Compile Include="Entities\Cadastro\Condicao.cs" />
-    <Compile Include="Entities\Cadastro\Departamento.cs" />
-    <Compile Include="Entities\Cadastro\Deposito.cs" />
-    <Compile Include="Entities\Cadastro\Detalhe.cs" />
-    <Compile Include="Entities\Cadastro\Email.cs" />
-    <Compile Include="Entities\Cadastro\Empresa.cs" />
-    <Compile Include="Entities\Cadastro\EnderecoBanco.cs" />
-    <Compile Include="Entities\Cadastro\EnderecoEmpresa.cs" />
-    <Compile Include="Entities\Cadastro\EnderecoFornecedor.cs" />
-    <Compile Include="Entities\Cadastro\Estado.cs" />
-    <Compile Include="Entities\Cadastro\Evento.cs" />
-    <Compile Include="Entities\Cadastro\Feriado.cs" />
-    <Compile Include="Entities\Cadastro\Fornecedor.cs" />
-    <Compile Include="Entities\Cadastro\Funcionalidade.cs" />
-    <Compile Include="Entities\Cadastro\FuncionalidadePermissao.cs" />
-    <Compile Include="Entities\Cadastro\Grupo.cs" />
-    <Compile Include="Entities\Cadastro\Hospital.cs" />
-    <Compile Include="Entities\Cadastro\Menu.cs" />
-    <Compile Include="Entities\Cadastro\ModuloMenu.cs" />
-    <Compile Include="Entities\Cadastro\ModuloMenuItem.cs" />
-    <Compile Include="Entities\Cadastro\Pais.cs" />
-    <Compile Include="Entities\Cadastro\PermissaoGrupoUsuario.cs" />
-    <Compile Include="Entities\Cadastro\Produto.cs" />
-    <Compile Include="Entities\Cadastro\ProdutoFornecedor.cs" />
-    <Compile Include="Entities\Cadastro\Questionario.cs" />
-    <Compile Include="Entities\Cadastro\QuestionarioIndicacao.cs" />
-    <Compile Include="Entities\Cadastro\QuestionarioPergunta.cs" />
-    <Compile Include="Entities\Cadastro\RamalUsuario.cs" />
-    <Compile Include="Entities\Cadastro\Reclamacao.cs" />
-    <Compile Include="Entities\Cadastro\Relatorio.cs" />
-    <Compile Include="Entities\Cadastro\Representante.cs" />
-    <Compile Include="Entities\Cadastro\RepresentanteUsuario.cs" />
-    <Compile Include="Entities\Cadastro\Resposta.cs" />
-    <Compile Include="Entities\Cadastro\Servico.cs" />
-    <Compile Include="Entities\Cadastro\Solicitacao.cs" />
-    <Compile Include="Entities\Cadastro\TelefoneEmpresa.cs" />
-    <Compile Include="Entities\Cadastro\TelefoneFornecedor.cs" />
-    <Compile Include="Entities\Cadastro\Unidade.cs" />
-    <Compile Include="Entities\Cadastro\Usuario.cs" />
-    <Compile Include="Entities\Cadastro\Vendedor.cs" />
     <Compile Include="Entities\Cargo.cs" />
     <Compile Include="Entities\CartaoDroRaia.cs" />
     <Compile Include="Entities\Categoria.cs" />
@@ -435,7 +377,6 @@
     <Compile Include="Validations\AlergiaValidator.cs" />
     <Compile Include="Validations\CargoValidator.cs" />
     <Compile Include="Validations\GrupoValidator.cs" />
-    <Compile Include="Validations\UsuarioValidator.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

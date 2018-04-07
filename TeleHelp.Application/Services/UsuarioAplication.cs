@@ -20,37 +20,6 @@ namespace TeleHelp.Application.Services
         }
 
 
-        public IList<string> ValidaLogin(string login, string senha)
-        {
-            try
-            {
-                return _usuarioservice.ValidaLogin(login, senha);
-            }
-            catch (Exception e)
-            {
-
-                throw e;
-            }
-        }
-
-        public bool AddUsuario(IUsuarioDTO usuarioDTO)
-        {
-            return _usuarioservice.AddUsuario(usuarioDTO);
-        }
-
-        public IList<GrupoUsuario> GetListaGrupoUsuario(int idUsuario)
-        {
-            return _usuarioservice.GetListaGrupoUsuario(idUsuario);
-        }
-
-        public RepresentanteUsuario GetRepresentanteUsuario(int idUsuario)
-        {
-            return _usuarioservice.GetRepresentanteUsuario(idUsuario);
-        }
-
-        public bool RemoveALLUsuario(IUsuarioDTO usuarioDTO)
-        {
-            return _usuarioservice.RemoveAllUsuario(usuarioDTO);
-        }
+       
     }
 }

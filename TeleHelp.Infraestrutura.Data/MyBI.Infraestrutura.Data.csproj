@@ -9,12 +9,13 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TeleHelp.Infraestrutura.Data</RootNamespace>
     <AssemblyName>TeleHelp.Infraestrutura.Data</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,23 +41,10 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework.SqlServerCompact, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.SqlServerCompact.6.0.0\lib\net40\EntityFramework.SqlServerCompact.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity.Repository, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Data.Entity.Repository.2.0.0.1\lib\net45\System.Data.Entity.Repository.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8854.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Data.SqlServerCe.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8854.1\lib\net40\System.Data.SqlServerCe.Entity.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -104,6 +92,14 @@
     <Compile Include="Migrations\201712280234420_MyBI2.Designer.cs">
       <DependentUpon>201712280234420_MyBI2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803311632536_Novo BD.cs" />
+    <Compile Include="Migrations\201803311632536_Novo BD.Designer.cs">
+      <DependentUpon>201803311632536_Novo BD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803311639219_Alteração Usuario.cs" />
+    <Compile Include="Migrations\201803311639219_Alteração Usuario.Designer.cs">
+      <DependentUpon>201803311639219_Alteração Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\CargoRepositories.cs" />
@@ -133,6 +129,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201712280234420_MyBI2.resx">
       <DependentUpon>201712280234420_MyBI2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803311632536_Novo BD.resx">
+      <DependentUpon>201803311632536_Novo BD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803311639219_Alteração Usuario.resx">
+      <DependentUpon>201803311639219_Alteração Usuario.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

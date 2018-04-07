@@ -1,4 +1,4 @@
-﻿using FluentValidation;
+﻿//using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,22 +8,22 @@ using TeleHelp.Domain.Entities;
 
 namespace TeleHelp.Domain.Validations
 {
-    public class GrupoValidator : AbstractValidator<Grupo>
+    public class GrupoValidator // : AbstractValidator<Grupo>
     {
-        public GrupoValidator()
-        {
-            RuleFor(c => c.Nome)
-                .NotNull()
-                .NotEmpty().WithMessage(("Nome não pode ser em branco"));
-
-            RuleFor(c => c.Descricao)
-                .NotNull()
-                .NotEmpty().WithMessage("Descrição não pode ser em branco");
-
-            //RuleFor(c => c.Ativo)
-            //    .NotNull()
-            //    .NotEmpty();
-
-        }
+        //public GrupoValidator()
+        //{
+        //    RuleFor(c => c.Nome)
+        //        .NotNull()
+        //        .NotEmpty().WithMessage(("Nome não pode ser em branco"));
+        //
+        //    RuleFor(c => c.Descricao)
+        //        .NotNull()
+        //        .NotEmpty().WithMessage("Descrição não pode ser em branco");
+        //
+        //    //RuleFor(c => c.Ativo)
+        //    //    .NotNull()
+        //    //    .NotEmpty();
+        //
+        //}
     }
 }

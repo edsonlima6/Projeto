@@ -55,7 +55,7 @@ namespace TeleHelp.Infraestrutura.Data.Mapping
             this.Property(t => t.DataCadastro).HasColumnName("DataCadastro");
             this.Property(t => t.Foto).HasColumnName("Foto");
             this.Property(t => t.Matricula).HasColumnName("Matricula");
-            this.Property(t => t.Turno).HasColumnName("Turno");
+            //this.Property(t => t.Turno).HasColumnName("Turno");
             this.Property(t => t.HorarioEntrada).HasColumnName("HorarioEntrada");
             this.Property(t => t.HorarioSaida).HasColumnName("HorarioSaida");
             this.Property(t => t.IdTipoUsuario).HasColumnName("IdTipoUsuario");
