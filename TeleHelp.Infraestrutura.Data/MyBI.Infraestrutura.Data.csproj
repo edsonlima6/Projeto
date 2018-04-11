@@ -100,6 +100,10 @@
     <Compile Include="Migrations\201803311639219_Alteração Usuario.Designer.cs">
       <DependentUpon>201803311639219_Alteração Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804110307059_AlteracaoUsuario.cs" />
+    <Compile Include="Migrations\201804110307059_AlteracaoUsuario.Designer.cs">
+      <DependentUpon>201804110307059_AlteracaoUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\CargoRepositories.cs" />
@@ -135,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803311639219_Alteração Usuario.resx">
       <DependentUpon>201803311639219_Alteração Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804110307059_AlteracaoUsuario.resx">
+      <DependentUpon>201804110307059_AlteracaoUsuario.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

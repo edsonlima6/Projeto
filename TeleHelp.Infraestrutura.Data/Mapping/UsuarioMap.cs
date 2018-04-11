@@ -54,17 +54,10 @@ namespace TeleHelp.Infraestrutura.Data.Mapping
             this.Property(t => t.Nome).HasColumnName("Nome");
             this.Property(t => t.DataCadastro).HasColumnName("DataCadastro");
             this.Property(t => t.Foto).HasColumnName("Foto");
-            this.Property(t => t.Matricula).HasColumnName("Matricula");
             //this.Property(t => t.Turno).HasColumnName("Turno");
-            this.Property(t => t.HorarioEntrada).HasColumnName("HorarioEntrada");
-            this.Property(t => t.HorarioSaida).HasColumnName("HorarioSaida");
-            this.Property(t => t.IdTipoUsuario).HasColumnName("IdTipoUsuario");
             //this.Property(t => t.IdTipoPerfil).HasColumnName("IdTipoPerfil");
-            this.Property(t => t.IdTipoAtendimento).HasColumnName("IdTipoAtendimento");
             this.Property(t => t.Email).HasColumnName("Email");
             this.Property(t => t.Ativo).HasColumnName("Ativo");
-            this.Property(t => t.IdCargo).HasColumnName("IdCargo");
-            this.Property(t => t.IdDepartamento).HasColumnName("IdDepartamento");
             this.Property(t => t.Login).HasColumnName("Login");
             this.Property(t => t.Senha).HasColumnName("Senha");
             this.Property(t => t.SenhaExtra).HasColumnName("SenhaExtra");

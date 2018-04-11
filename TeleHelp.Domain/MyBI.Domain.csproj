@@ -70,7 +70,6 @@
     <Compile Include="DTO\InterfacesDTO\ICargoDTO.cs" />
     <Compile Include="DTO\InterfacesDTO\IGrupoDTO.cs" />
     <Compile Include="DTO\InterfacesDTO\IUsuarioDTO.cs" />
-    <Compile Include="DTO\UsuarioDTO.cs" />
     <Compile Include="Entities\Acao.cs" />
     <Compile Include="Entities\Agenda.cs" />
     <Compile Include="Entities\AgendaUsuarioIndicacao.cs" />

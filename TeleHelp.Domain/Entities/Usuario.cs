@@ -49,27 +49,27 @@ namespace TeleHelp.Domain.Entities
         
         public byte[] Foto { get; set; }
 
-        public int? Matricula { get; set; }
+        //public int? Matricula { get; set; }
 
         //public int? Turno { get; set; }
 
-        public TimeSpan? HorarioEntrada { get; set; }
+        //public TimeSpan? HorarioEntrada { get; set; }
 
-        public TimeSpan? HorarioSaida { get; set; }
+        //public TimeSpan? HorarioSaida { get; set; }
 
-        public int IdTipoUsuario { get; set; }
+        //public int IdTipoUsuario { get; set; }
 
         //public int IdTipoPerfil { get; set; }
 
-        public int IdTipoAtendimento { get; set; }
+        //public int IdTipoAtendimento { get; set; }
         
         public string Email { get; set; }
 
         public bool Ativo { get; set; }
 
-        public int IdCargo { get; set; }
+        //public int IdCargo { get; set; }
 
-        public int IdDepartamento { get; set; }
+        //public int IdDepartamento { get; set; }
         
         public string Login { get; set; }
         

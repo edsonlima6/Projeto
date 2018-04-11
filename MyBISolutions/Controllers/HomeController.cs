@@ -15,19 +15,16 @@ namespace MyBISolutions.Controllers
         IUsuarioAplication usuarioAplication;
         public HomeController(IUsuarioAplication _usuarioAplication)
         {
-            //usuarioAplication = _usuarioAplication;
+            usuarioAplication = _usuarioAplication;
         }
         public ActionResult Index()
         {
-            var usuario = new Usuario()
-            {
-                Nome = "Edson"
-            };
-            var vm = Mapper.Map<Usuario, UsuarioModel>(usuario);
-            var u = Mapper.Map<UsuarioModel, Usuario>(vm);
-            return View(vm);
+            //var vm = Mapper.Map<Usuario, UsuarioModel>(usuario);
+            //var u = Mapper.Map<UsuarioModel, Usuario>(vm);
+            return View();
         }
 
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public ActionResult Index(UsuarioModel usuarioModel)
         {
@@ -40,9 +37,35 @@ namespace MyBISolutions.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Soluções em finanças pessoais";
 
             return View();
+        }
+
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public ActionResult About(UsuarioModel usuarioModel)
+        {
+            if (ModelState.IsValid)
+            {
+                //return View(usuarioModel);
+            }
+            var usuarioDomain = Mapper.Map<UsuarioModel, Usuario>(usuarioModel);
+            try
+            {
+                usuarioDomain.DataCadastro = DateTime.Now;
+                usuarioDomain.Login = usuarioDomain.Email;
+                usuarioAplication.Add(usuarioDomain);
+                usuarioAplication.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                return View();
+            }
+           
+
+            
         }
 
         public ActionResult Contact()

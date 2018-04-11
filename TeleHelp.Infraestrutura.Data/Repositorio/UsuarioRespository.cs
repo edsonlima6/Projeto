@@ -53,14 +53,7 @@ namespace TeleHelp.Infraestrutura.Data.Repositorio
                 UsuarioBD.Nome = usuario.Nome;
                 UsuarioBD.Email = usuario.Email;
                 UsuarioBD.Foto = usuario.Foto;
-                UsuarioBD.HorarioEntrada = usuario.HorarioEntrada;
-                UsuarioBD.HorarioSaida = usuario.HorarioSaida;
-                UsuarioBD.IdCargo = usuario.IdCargo;
-                UsuarioBD.IdDepartamento = usuario.IdDepartamento;
-                UsuarioBD.IdTipoAtendimento = usuario.IdTipoAtendimento;
-                UsuarioBD.IdTipoUsuario = usuario.IdTipoUsuario;
                 UsuarioBD.Login = usuario.Login;
-                UsuarioBD.Matricula = usuario.Matricula;
                 UsuarioBD.Senha = usuario.Senha;
                 UsuarioBD.SenhaExtra = usuario.SenhaExtra;
                // UsuarioBD.Turno = usuario.Turno;

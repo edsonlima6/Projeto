@@ -46,3 +46,4 @@ C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Infraestrutura.Data\obj\Debug\MyBI
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Infraestrutura.Data\obj\Debug\MyBI.Infraestrutura.Data.csproj.CoreCompileInputs.cache
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Infraestrutura.Data\obj\Debug\TeleHelp.Infraestrutura.Data.dll
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Infraestrutura.Data\obj\Debug\TeleHelp.Infraestrutura.Data.pdb
+C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Infraestrutura.Data\obj\Debug\TeleHelp.Infraestrutura.Data.Migrations.AlteracaoUsuario.resources

@@ -8,6 +8,7 @@
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+   
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 </head>
@@ -24,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            @Html.ActionLink("Home", "Index", "Home", new { @class = "nav-link" })
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
@@ -48,14 +49,12 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-        <br />     
+            </nav>   
         <div class="row">
-            <div class="container body-content">
+            @*<div class="container  body-content">*@
 
                 @RenderBody()
-
-            </div>
+            @*</div>*@
         </div>
 
 
@@ -65,8 +64,8 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content retiraBorder">
                         <div class="modal-header">
-                            <h6 class="modal-title text-center" id="exampleModalLongTitle">Area do Cliente</h6>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <h3 class="modal-title" id="exampleModalLongTitle">Area do Cliente</h3>
+                            <button type="button" class="btn btn-light" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             
@@ -80,18 +79,18 @@
                                         //HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
                                         @Html.ValidationSummary()
                                         <div class="form-group">
-                                            @Html.LabelFor(m => m.Nome)
-                                            @Html.TextBoxFor(m => m.Nome, new { @class = " form-control form-control-sm", type = "email", required = "required" })
+                                            @Html.LabelFor(m => m.Login)
+                                            @Html.TextBoxFor(m => m.Login, new { @class = " form-control form-control-sm", type = "email", required = "required" })
                                         </div>
                                         <div class="form-group">
                                             @Html.LabelFor(m => m.Senha)
                                             @Html.PasswordFor(m => m.Senha, new { @class = "form-control form-control-sm", required = "required" })
                                         </div>
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-primary ">Entrar</button>
-                                            <button type="button" class="btn btn-outline-success ml-sm-1" data-dismiss="modal">Cadastre-se</button>
+                                            <button type="submit" class="btn btn-outline-primary ">Entrar</button>
+                                            @*<button type="button" class="btn btn-outline-success ml-sm-1" data-dismiss="modal">Cadastre-se</button>*@
+                                            @Html.ActionLink("Cadastre-se", "About", "Home", new { @class= "btn btn-outline-success ml-sm-1" })
                                         </div>
-                                        
                                     }
                                 @*</div>*@
                             </div>
@@ -106,8 +105,6 @@
         </div>
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")
-        @Scripts.Render("~/Scripts/Login/LoginJs")
-        @Styles.Render("~/Content/Login")
         @RenderSection("scripts", required: false)
     </div>
 </body>
