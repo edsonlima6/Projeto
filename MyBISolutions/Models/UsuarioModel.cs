@@ -18,10 +18,10 @@ namespace MyBISolutions.Models
         [MinLength(8, ErrorMessage = "Senha não pode ser inferior a 8 digitos")]
         public string Senha { get; set; }
 
-        [Required(ErrorMessage = "Confirmação de senha inválida.")]
-        [MaxLength(12, ErrorMessage = "Senha não pode ser superior a 12 digitos")]
-        [MinLength(8, ErrorMessage = "Senha não pode ser inferior a 8 digitos")]
-        [Display(Name ="Confirmação de senha")]
+        //[Required(ErrorMessage = "Confirmação de senha inválida.")]
+        //[MaxLength(12, ErrorMessage = "Senha não pode ser superior a 12 digitos")]
+        //[MinLength(8, ErrorMessage = "Senha não pode ser inferior a 8 digitos")]
+        //[Display(Name ="Confirmação de senha")]
         public string SenhaRepetida { get; set; }
 
         [Display(Name = "Nome")]

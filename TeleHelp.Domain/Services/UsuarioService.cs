@@ -21,34 +21,34 @@ namespace TeleHelp.Domain.Services
             _usuarioRepository = usuarioRepository;
         }
 
-        public IList<string> ValidaLogin(string login, string senha)
-        {
+        //public IList<string> ValidaLogin(string login, string senha)
+        //{
 
-            try
-            {
-                //erros.Clear();
-                //var user = new Usuario() { Login = login, Senha = senha };
-                //var userValidator = new UsuarioValidator().Validate(user);
-                //if (!userValidator.IsValid)
-                //{
-                //    foreach (var item in userValidator.Errors)
-                //    {
-                //        erros.Add(item.ErrorMessage.ToString() + "\n");
-                //    }
-                //    return erros;
-                //}
-                //if (!_usuarioRepository.ValidaLogin(user.Login, user.Senha))
-                //{
-                //    erros.Clear();
-                //    erros.Add("Login/Senha Inválido");
-                //}
-                return erros;
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-        }
+        //    try
+        //    {
+        //        //erros.Clear();
+        //        //var user = new Usuario() { Login = login, Senha = senha };
+        //        //var userValidator = new UsuarioValidator().Validate(user);
+        //        //if (!userValidator.IsValid)
+        //        //{
+        //        //    foreach (var item in userValidator.Errors)
+        //        //    {
+        //        //        erros.Add(item.ErrorMessage.ToString() + "\n");
+        //        //    }
+        //        //    return erros;
+        //        //}
+        //        //if (!_usuarioRepository.ValidaLogin(user.Login, user.Senha))
+        //        //{
+        //        //    erros.Clear();
+        //        //    erros.Add("Login/Senha Inválido");
+        //        //}
+        //        return erros;
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        throw e;
+        //    }
+        //}
 
         public bool AddUsuario(IUsuarioDTO usuarioDTO)
         {
@@ -131,6 +131,33 @@ namespace TeleHelp.Domain.Services
             {
                 throw erroExcluirBD;
             }
+        }
+
+        public Usuario ValidaLogin(string login, string senha)
+        {
+            try
+            {
+               return  _usuarioRepository.ValidaLogin(login, senha);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Usuario AddUsuario(Usuario usuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateUsuario(Usuario usuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IUsuarioService.AddUsuario(Usuario usuario)
+        {
+            throw new NotImplementedException();
         }
     }
 }

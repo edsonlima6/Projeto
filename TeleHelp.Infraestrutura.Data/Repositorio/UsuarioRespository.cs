@@ -14,11 +14,14 @@ namespace TeleHelp.Infraestrutura.Data.Repositorio
     public class UsuarioRespository : RepositoryBase<Usuario>, IUsuarioRepository
     {
      
-        public bool ValidaLogin(string login, string senha)
+        public Usuario ValidaLogin(string login, string senha)
         {
             try
             {
-                return true;// Db.Usuarios.Where(u => u.Login == login && u.Senha == senha).Count().Equals(0) ? false : true;
+                var userDomain = Db.Usuarios.Where(u => u.Email.Equals(login))
+                                            .FirstOrDefault();
+
+                return userDomain;
             }
             catch (Exception e)
             {

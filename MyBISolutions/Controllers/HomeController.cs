@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MyBISolutions.Models;
+using MyBISolutions.Models.ClassesFuncionais;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,12 @@ namespace MyBISolutions.Controllers
 {
     public class HomeController : Controller
     {
-        IUsuarioAplication usuarioAplication;
-        public HomeController(IUsuarioAplication _usuarioAplication)
+        readonly IUsuarioAplication _usuarioAplication;
+        readonly SessionUser _sessionUser;
+        public HomeController(IUsuarioAplication usuarioAplication)
         {
-            usuarioAplication = _usuarioAplication;
+            _usuarioAplication = usuarioAplication;
+            _sessionUser = new SessionUser(_usuarioAplication);
         }
         public ActionResult Index()
         {
@@ -28,11 +31,21 @@ namespace MyBISolutions.Controllers
         [HttpPost]
         public ActionResult Index(UsuarioModel usuarioModel)
         {
-            if (ModelState.IsValid)
+            try
             {
-              return  RedirectToAction("About");
+                if (ModelState.IsValid)
+                {
+                    _sessionUser.ValidaSession(usuarioModel);
+                    return RedirectToAction("About");
+                }
+                return View(usuarioModel);
             }
-            return View(usuarioModel);
+            catch (Exception ex)
+            {
+                ViewBag.MsgError = ex.Message;
+                return View(usuarioModel);
+            }
+          
         }
 
         public ActionResult About()
@@ -48,24 +61,28 @@ namespace MyBISolutions.Controllers
         {
             if (ModelState.IsValid)
             {
-                //return View(usuarioModel);
-            }
-            var usuarioDomain = Mapper.Map<UsuarioModel, Usuario>(usuarioModel);
-            try
-            {
-                usuarioDomain.DataCadastro = DateTime.Now;
-                usuarioDomain.Login = usuarioDomain.Email;
-                usuarioAplication.Add(usuarioDomain);
-                usuarioAplication.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            catch (Exception ex)
-            {
-                return View();
-            }
-           
+                try
+                {
+                    var validaLogin = _usuarioAplication.GetAll()
+                                                        .Any(u => u.Email.Equals(usuarioModel.Email));
+                                                     
+                    if(validaLogin)
+                    {
+                        ViewBag.erroLogin = "E-mail existente na base de dados";                        
+                    }
+                    else
+                    {
+                        _sessionUser.AddUser(usuarioModel);
+                        return RedirectToAction("Index");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return View();
+                }
 
-            
+            }
+            return View(usuarioModel);
         }
 
         public ActionResult Contact()

@@ -19,7 +19,15 @@
         {
             @Html.AntiForgeryToken()
             //HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
-            @Html.ValidationSummary()
+
+                
+                    var erroLogin = "";
+                    if (ViewBag.erroLogin != null)
+                    {
+                        erroLogin = ViewBag.erroLogin;
+                    }
+           
+            <label class="text-danger">@erroLogin</label>
             <div class="form-group">
                 @Html.LabelFor(m => m.Nome)
                 @Html.TextBoxFor(m => m.Nome, new { @class = " form-control form-control-sm", required = "required" })

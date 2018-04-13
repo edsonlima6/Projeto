@@ -72,11 +72,18 @@
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                @*<div class="col-8  mx-auto">*@
                                     @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "col-8  mx-auto" }))
                                     {
+                                        var MsgError = "";
+                                            if (ViewBag.MsgError != null)
+                                        {
+                                            MsgError = ViewBag.MsgError;
+                                        }
+                                        <label class="text-danger">@MsgError</label>
+
+                                        
+
                                         @Html.AntiForgeryToken()
-                                        //HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
                                         @Html.ValidationSummary()
                                         <div class="form-group">
                                             @Html.LabelFor(m => m.Login)

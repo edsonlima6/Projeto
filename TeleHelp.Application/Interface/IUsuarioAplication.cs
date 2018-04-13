@@ -10,5 +10,8 @@ namespace TeleHelp.Application.Interface
 {
     public interface IUsuarioAplication : IAplicationBase<Usuario>
     {
+        Usuario ValidaLogin(string login, string senha);
+        void AddUsuario(Usuario usuario);
+        void UpdateUsuario(Usuario usuario);
     }
 }

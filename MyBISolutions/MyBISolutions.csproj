@@ -161,6 +161,8 @@
     </Compile>
     <Compile Include="Mappers\AutoMapperonfig.cs" />
     <Compile Include="Mappers\DomainToViewModelMappingProfile.cs" />
+    <Compile Include="Models\ClassesFuncionais\Funcionalidade.cs" />
+    <Compile Include="Models\ClassesFuncionais\SessionUser.cs" />
     <Compile Include="Models\UsuarioModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

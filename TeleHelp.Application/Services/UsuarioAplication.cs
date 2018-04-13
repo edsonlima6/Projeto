@@ -19,7 +19,34 @@ namespace TeleHelp.Application.Services
             _usuarioservice = _Usuarioservice;
         }
 
+        public void AddUsuario(Usuario usuario)
+        {
+            try
+            {
+                _usuarioservice.AddUsuario(usuario);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
-       
+        public void UpdateUsuario(Usuario usuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Usuario ValidaLogin(string login, string senha)
+        {
+            try
+            {
+               return  _usuarioservice.ValidaLogin(login, senha);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }
