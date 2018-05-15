@@ -88,21 +88,9 @@
     <Compile Include="Mapping\TelaMap.cs" />
     <Compile Include="Mapping\TipoEnderecoMap.cs" />
     <Compile Include="Mapping\UsuarioMap.cs" />
-    <Compile Include="Migrations\201712280234420_MyBI2.cs" />
-    <Compile Include="Migrations\201712280234420_MyBI2.Designer.cs">
-      <DependentUpon>201712280234420_MyBI2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803311632536_Novo BD.cs" />
-    <Compile Include="Migrations\201803311632536_Novo BD.Designer.cs">
-      <DependentUpon>201803311632536_Novo BD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803311639219_Alteração Usuario.cs" />
-    <Compile Include="Migrations\201803311639219_Alteração Usuario.Designer.cs">
-      <DependentUpon>201803311639219_Alteração Usuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804110307059_AlteracaoUsuario.cs" />
-    <Compile Include="Migrations\201804110307059_AlteracaoUsuario.Designer.cs">
-      <DependentUpon>201804110307059_AlteracaoUsuario.cs</DependentUpon>
+    <Compile Include="Migrations\201805092340274_RetiraSenha.cs" />
+    <Compile Include="Migrations\201805092340274_RetiraSenha.Designer.cs">
+      <DependentUpon>201805092340274_RetiraSenha.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -131,17 +119,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712280234420_MyBI2.resx">
-      <DependentUpon>201712280234420_MyBI2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803311632536_Novo BD.resx">
-      <DependentUpon>201803311632536_Novo BD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803311639219_Alteração Usuario.resx">
-      <DependentUpon>201803311639219_Alteração Usuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804110307059_AlteracaoUsuario.resx">
-      <DependentUpon>201804110307059_AlteracaoUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201805092340274_RetiraSenha.resx">
+      <DependentUpon>201805092340274_RetiraSenha.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

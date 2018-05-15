@@ -39,3 +39,16 @@ C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Services\obj\Debug\MyBI.Services.c
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Services\obj\Debug\MyBI.Services.csproj.CoreCompileInputs.cache
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Services\obj\Debug\TeleHelp.Services.dll
 C:\Users\edson\Documents\GitHub\MyBI\TeleHelp.Services\obj\Debug\TeleHelp.Services.pdb
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Services\bin\Debug\TeleHelp.Services.dll
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Services\bin\Debug\TeleHelp.Services.pdb
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Services\bin\Debug\TeleHelp.Application.dll
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Services\bin\Debug\TeleHelp.Domain.dll
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Services\bin\Debug\EntityFramework.dll
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Services\bin\Debug\TeleHelp.Application.pdb
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Services\bin\Debug\TeleHelp.Domain.pdb
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Services\bin\Debug\TeleHelp.Domain.dll.config
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Services\bin\Debug\EntityFramework.xml
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Services\obj\Debug\MyBI.Services.csprojResolveAssemblyReference.cache
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Services\obj\Debug\MyBI.Services.csproj.CoreCompileInputs.cache
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Services\obj\Debug\TeleHelp.Services.dll
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Services\obj\Debug\TeleHelp.Services.pdb

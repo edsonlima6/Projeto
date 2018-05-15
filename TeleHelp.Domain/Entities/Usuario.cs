@@ -74,8 +74,7 @@ namespace TeleHelp.Domain.Entities
         public string Login { get; set; }
         
         public byte[] Senha { get; set; }
-
-        public byte[] SenhaExtra { get; set; }
+        
 
         public DateTime? DataAlteracao { get; set; }
         

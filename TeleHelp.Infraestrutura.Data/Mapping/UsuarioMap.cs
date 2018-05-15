@@ -60,7 +60,7 @@ namespace TeleHelp.Infraestrutura.Data.Mapping
             this.Property(t => t.Ativo).HasColumnName("Ativo");
             this.Property(t => t.Login).HasColumnName("Login");
             this.Property(t => t.Senha).HasColumnName("Senha");
-            this.Property(t => t.SenhaExtra).HasColumnName("SenhaExtra");
+            //this.Property(t => t.SenhaExtra).HasColumnName("SenhaExtra");
             this.Property(t => t.DataAlteracao).HasColumnName("DataAlteracao");
 
 

@@ -58,7 +58,7 @@ namespace TeleHelp.Infraestrutura.Data.Repositorio
                 UsuarioBD.Foto = usuario.Foto;
                 UsuarioBD.Login = usuario.Login;
                 UsuarioBD.Senha = usuario.Senha;
-                UsuarioBD.SenhaExtra = usuario.SenhaExtra;
+                //UsuarioBD.SenhaExtra = usuario.SenhaExtra;
                // UsuarioBD.Turno = usuario.Turno;
                 Update(UsuarioBD);
                 SaveChanges();
