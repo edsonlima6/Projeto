@@ -15,8 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infraestructure", "4 - 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.1 - Web", "0.1 - Web", "{78CD190B-34F0-46F6-ADAC-2D9AD69A8F78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBI.Services", "TeleHelp.Services\MyBI.Services.csproj", "{656E3217-4A38-48FE-9DB9-3B182D66A6A4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBI.Application", "TeleHelp.Application\MyBI.Application.csproj", "{AEA37FB0-CBAB-43DE-99D1-DA75E19B4153}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBI.Domain", "TeleHelp.Domain\MyBI.Domain.csproj", "{31BB4E3B-518D-400C-AF32-A1D66755DD30}"
@@ -27,16 +25,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBI-Identity", "MyBI-Ident
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EP.IdentityIsolation.Infra.CrossCutting.Identity", "..\..\IdentityEduardo\IdentityIsolation\src\EP.IdentityIsolation.Infra.CrossCutting.Identity\EP.IdentityIsolation.Infra.CrossCutting.Identity.csproj", "{9062B1C5-F32D-435E-93B2-2E7F6268B2A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBI.ServicesAPI", "MyBI.ServicesAPI\MyBI.ServicesAPI.csproj", "{DAB9F7D9-082B-4E55-9F6D-3E27D1161676}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{656E3217-4A38-48FE-9DB9-3B182D66A6A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{656E3217-4A38-48FE-9DB9-3B182D66A6A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{656E3217-4A38-48FE-9DB9-3B182D66A6A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{656E3217-4A38-48FE-9DB9-3B182D66A6A4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AEA37FB0-CBAB-43DE-99D1-DA75E19B4153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AEA37FB0-CBAB-43DE-99D1-DA75E19B4153}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEA37FB0-CBAB-43DE-99D1-DA75E19B4153}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,18 +53,22 @@ Global
 		{9062B1C5-F32D-435E-93B2-2E7F6268B2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9062B1C5-F32D-435E-93B2-2E7F6268B2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9062B1C5-F32D-435E-93B2-2E7F6268B2A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB9F7D9-082B-4E55-9F6D-3E27D1161676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB9F7D9-082B-4E55-9F6D-3E27D1161676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB9F7D9-082B-4E55-9F6D-3E27D1161676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB9F7D9-082B-4E55-9F6D-3E27D1161676}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{78CD190B-34F0-46F6-ADAC-2D9AD69A8F78} = {2C3B92CF-67E8-43D9-BB56-3AB44157089D}
-		{656E3217-4A38-48FE-9DB9-3B182D66A6A4} = {BA469084-C27F-4EC2-8D4C-4B0C1F12DC27}
 		{AEA37FB0-CBAB-43DE-99D1-DA75E19B4153} = {811CF6B9-6261-4DC2-825C-9C25B8A943CB}
 		{31BB4E3B-518D-400C-AF32-A1D66755DD30} = {8BD3AED6-41F6-4760-B97F-7DE53C91AF51}
 		{2ED61B43-7AB5-4BE6-B08F-882928F41E96} = {9953D247-3EE3-4AF2-8926-D04B74428B35}
 		{B3594A20-C2BA-47AC-9F63-19D02A720653} = {78CD190B-34F0-46F6-ADAC-2D9AD69A8F78}
 		{9062B1C5-F32D-435E-93B2-2E7F6268B2A1} = {9953D247-3EE3-4AF2-8926-D04B74428B35}
+		{DAB9F7D9-082B-4E55-9F6D-3E27D1161676} = {BA469084-C27F-4EC2-8D4C-4B0C1F12DC27}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E71D0164-B333-4DFA-991B-CF8C47CFD495}

@@ -19,6 +19,7 @@ namespace MyBI_Identity.Controllers
 
         public ManageController()
         {
+
         }
 
         public ManageController(ApplicationUserManager2 userManager, ApplicationSignInManager2 signInManager)
