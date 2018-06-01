@@ -41,7 +41,8 @@ C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Application\bin\Debug\Enti
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Application\bin\Debug\TeleHelp.Domain.pdb
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Application\bin\Debug\TeleHelp.Domain.dll.config
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Application\bin\Debug\EntityFramework.xml
-C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Application\obj\Debug\MyBI.Application.csprojResolveAssemblyReference.cache
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Application\obj\Debug\MyBI.Application.csprojAssemblyReference.cache
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Application\obj\Debug\MyBI.Application.csproj.CoreCompileInputs.cache
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Application\obj\Debug\MyBI.Application.csproj.CopyComplete
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Application\obj\Debug\TeleHelp.Application.dll
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Application\obj\Debug\TeleHelp.Application.pdb

@@ -84,7 +84,8 @@ C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\bin\Microsoft.AI.Web.
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\bin\Twilio.Api.pdb
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\bin\Twilio.Api.xml
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\bin\RestSharp.xml
-C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\obj\Debug\MyBI-Identity.csprojResolveAssemblyReference.cache
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\obj\Debug\MyBI-Identity.csproj.CoreCompileInputs.cache
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\obj\Debug\MyBI-Identity.dll
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\obj\Debug\MyBI-Identity.pdb
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\obj\Debug\MyBI-Identity.csprojAssemblyReference.cache
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\obj\Debug\MyBI-Identity.csproj.CopyComplete

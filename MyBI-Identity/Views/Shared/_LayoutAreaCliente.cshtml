@@ -16,19 +16,20 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2 padd" >
-                <div class="list-group list-group-flush">
-                    <a href="#" class="list-group-item list-group-item-action">Cadastrar Documentos</a>
-                    <a href="#" class="list-group-item list-group-item-action">Cadastrar Produtos</a>
-                    <a href="#" class="list-group-item list-group-item-action">Cadastrar Pedidos</a>
-                    <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+            <div class="col-12 col-md-4">
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action">Comercial</button>
+                    <button type="button" class="list-group-item list-group-item-action">Financeiro</button>
+                    <button type="button" class="list-group-item list-group-item-action">Administrativo</button>
+                    <button type="button" class="list-group-item list-group-item-action">Logística</button>
+                    <button type="button" class="list-group-item list-group-item-action">Contas</button>
                 </div>
             </div>
-            <div class="col-md-10">
-                    <div class="ml-5">
-                        @RenderBody()
+            <div class="col-12 col-md-8">
+                @*<div class="ml-5">*@
+                @RenderBody()
 
-                    </div>
+                @*</div>*@
             </div>
         </div>
     </div>

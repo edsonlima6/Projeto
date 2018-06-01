@@ -25,7 +25,8 @@ namespace MyBI_Identity
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/ContentClient/areaCliente.css"));
         }
     }
 }

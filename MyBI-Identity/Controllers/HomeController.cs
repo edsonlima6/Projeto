@@ -26,7 +26,7 @@ namespace MyBI_Identity.Controllers
             return View();
         }
 
-        //[Authorize(Roles ="Admin")]
+        [Authorize(Roles ="Admin")]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
