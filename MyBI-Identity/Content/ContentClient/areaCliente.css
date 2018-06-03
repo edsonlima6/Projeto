@@ -1,6 +1,9 @@
 ﻿body {
 }
 
+rgb {
+    background-color: #563d7c;
+}
 .list-group-item-action {
     cursor: pointer;
     border: 0px solid rgba(0, 0, 0, 0.125);
@@ -12,6 +15,11 @@ button[class*="list-group-item-action"] {
 button[class*="list-group-item-action"]:hover{
     font-size:15px;
 }
+
+button[class*="navbar-toggler"]:hover{
+
+}
+
 .imgCol {
     width: 180px;
     height: 320px;
@@ -19,7 +27,3 @@ button[class*="list-group-item-action"]:hover{
     transition: width height 60s;
     cursor: pointer;
 }
-    /*.imgCol:hover {
-        height: 320px;
-        width:180px;
-    }*/

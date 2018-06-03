@@ -3,42 +3,72 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - MyBI</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Acss")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
+    @{
+        bool menuCliente = false;
+    }
+    <div class="container-fluid">
+        <div class="row" id="fix">
+            <div class="col-12 col-md-12 col-lg-12">
+                <nav class="navbar navbar-dark rgb">
+                    <div class="" id="disableMobi">
+                        <button class="btn btn-outline-warning">Login</button>
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-light rgb">
+                        @*<a class="navbar-brand" href="#">Navbar</a>*@
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Início<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sobre Nós</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Serviços</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" style="display:none;" id="btnHide">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </nav>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
+      
+        <div class="row ">
+            @{
+                if (menuCliente)
+                {
+                    <div class="col-12 col-md-2 col-lg-2">
+                        @* inserir o menu do cliente aqui *@
+                    </div>
+                }
+            }
+            <div class="col-12 col-md-12 col-lg-12 mt-5 pt-4">
+                @RenderBody()
+
+            </div>
+        </div>
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now - MyBI Soluções</p>
+            <span class="media-object flag-icon flag-icon-br"></span>
         </footer>
     </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/layout")
     @RenderSection("scripts", required: false)
 </body>
 </html>

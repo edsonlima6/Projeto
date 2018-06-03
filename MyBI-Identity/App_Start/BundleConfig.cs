@@ -19,13 +19,22 @@ namespace MyBI_Identity
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/layout").Include(
+                        "~/Scripts/layout.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css",
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/Acss").Include(
+                      "~/Content/Layout.css"));
+
+            bundles.Add(new StyleBundle("~/Content/clientecss").Include(
                       "~/Content/ContentClient/areaCliente.css"));
         }
     }
