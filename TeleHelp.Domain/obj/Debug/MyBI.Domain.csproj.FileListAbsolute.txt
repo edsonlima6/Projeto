@@ -82,3 +82,4 @@ C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Domain\obj\Debug\MyBI.Doma
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Domain\obj\Debug\MyBI.Domain.csproj.CopyComplete
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Domain\obj\Debug\TeleHelp.Domain.dll
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Domain\obj\Debug\TeleHelp.Domain.pdb
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Domain\obj\Debug\MyBI.Domain.csprojAssemblyReference.cache

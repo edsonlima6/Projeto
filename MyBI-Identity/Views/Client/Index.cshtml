@@ -1,43 +1,28 @@
 ﻿
 @{
-    Layout = null;
+    //Layout = null;
 }
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    @*<link type="text/css" rel="stylesheet" href="~/Content/ContentClient/areaCliente.css">*@
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    <script type="text/javascript" src="~/"></script>
-</head>
-<body>
+@*@Styles.Render("~/Content/css")*@
+@*<link href="~/Content/bootstrap.min.css" type="text/css" rel="stylesheet" >*@
+<div class="row">
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-12 col-lg-12">
-                <div>
-                    <figure class="figure">
-                        <img src="~/Image/lue Wood.jpg" class="figure-img img-fluid rounded imgCol" alt="A generic square placeholder image with rounded corners in a figure.">
-                        @*<figcaption class="figure-caption text-right">A caption for the above image.</figcaption>*@
-                    </figure>
-                    <figure class="figure">
-                        <img src="~/Image/lue Wood.jpg" class="figure-img img-fluid rounded imgCol" alt="A generic square placeholder image with rounded corners in a figure.">
-                        @*<figcaption class="figure-caption text-right">A caption for the above image.</figcaption>*@
-                    </figure>
+        <div class="formLg">
+            <form id="formT">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    @Html.TextBox("Des")
+                    @*<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>*@
                 </div>
-                <div>
-                    <figure class="figure">
-                        <img src="~/Image/lue Wood.jpg" class="figure-img img-fluid rounded imgCol" alt="A generic square placeholder image with rounded corners in a figure.">
-                        @*<figcaption class="figure-caption text-right">A caption for the above image.</figcaption>*@
-                    </figure>
-                    <figure class="figure">
-                        <img src="~/Image/lue Wood.jpg" class="figure-img img-fluid rounded imgCol" alt="A generic square placeholder image with rounded corners in a figure.">
-                        @*<figcaption class="figure-caption text-right">A caption for the above image.</figcaption>*@
-                    </figure>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 </div>
-            </div>
+                @*<div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>*@
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </div>
-</body>
-</html>
+</div>

@@ -1,23 +1,30 @@
 ﻿$(document).ready(function () {
 
     HabilitaLink();
-    RemoveLink();
+    //RemoveLink();
 });
 
 
 
 function HabilitaLink()
 {
+    var n = $("form");
+    if (n.length > 0) {
+        $("#fix").addClass("vai");
+        console.log("passou rola");
+        return;
+    }
+    $("#fix").addClass("vai2");
+    console.log("fudeo");
+
     //$('#navbarNav').on('shown.bs.collapse', function () {
     //    console.log("Show");
-    //    $("#btnHide").removeAttr("hidden");
-
-
+    //    $("#fix").addClass("vai");
     //});
 }
 function RemoveLink() {
-    //$('#navbarNav').on('hidden.bs.collapse', function () {
-    //    console.log("Saiu");
-    //    $("#btnHide").appendTo("hidden", "hidden");
-    //});
+    $('#navbarNav').on('hidden.bs.collapse', function () {
+        console.log("Saiu");
+        $("#fix").css("position", "inherit");
+    });
 }

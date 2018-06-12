@@ -1,30 +1,36 @@
-﻿body {
-    /*background-color: rgba(86,61,124,1);*/
+﻿/*body {
+    /*background-color: rgba(86,61,124,1);
     
-}
+}*/
 
 /* Set padding to keep content from hitting the edges */
-.body-content {
+/*.body-content {
     padding-left: 15px;
     padding-right: 15px;
+    col-12, .col-md-12, .col-lg-12
+}*/
+.vai{
+    position: inherit!important;
 }
-
+.vai2 {
+    position: fixed!important;
+}
 .col-12, .col-md-12, .col-lg-12 {
     position: inherit;
 }
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
-.dl-horizontal dt {
+/*.dl-horizontal dt {
     white-space: normal;
-}
+}*/
 
 /* Set width on the form input elements since they're 100% wide by default */
-input,
+/*input,
 select,
 textarea {
     max-width: 280px;
-}
+}*/
 
 .padd {
     padding-left: 0;
@@ -45,8 +51,14 @@ textarea {
 }
 @media screen and (max-width: 600px) {
     #fix {
-        position: absolute !important;
+        position:inherit!important;
         opacity: 1 !important;
+    }
+    .formLg {
+        width: auto !important;
+        height: auto !important;
+        margin-left: 10% !important;
+        margin-right: 10% !important;
     }
 }
 img{
@@ -64,5 +76,12 @@ img{
     width:100%;
     height:100%;
     opacity:0.7;
+}
+.formLg{
+    width:300px;
+    height:300px;
+    margin-left:40%;
+    margin-right:40%;
+    margin-top:5%;
 }
 

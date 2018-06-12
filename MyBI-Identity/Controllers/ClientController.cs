@@ -11,7 +11,7 @@ namespace MyBI_Identity.Controllers
         // GET: Client
         public ActionResult Index()
         {
-            return View();
+            return View("EmpresaCadastro");
         }
     }
 }

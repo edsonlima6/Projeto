@@ -7,11 +7,14 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/Acss")
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
+ 
+   
+   
     @{
         bool menuCliente = false;
+        ViewBag.Login = false;
     }
     <div class="container-fluid">
         <div class="row" id="fix">
@@ -28,16 +31,17 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Início<span class="sr-only">(current)</span></a>
+                                    @Html.ActionLink("Inicio", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link" })
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Sobre Nós</a>
+                                    @Html.ActionLink("Sobre Nós", "About", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link" })
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Serviços</a>
+                                    @Html.ActionLink("Contato", "Contact", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link" })
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#" style="display:none;" id="btnHide">Login</a>
+                                    @*<a class="nav-link" href="#" style="display:none;" id="btnHide">Login</a>*@
+                                    @Html.ActionLink("Login", "Index", "Client", routeValues: null, htmlAttributes: new { id = "btnHide", @class = "nav-link" })
                                 </li>
                             </ul>
                         </div>
@@ -45,12 +49,12 @@
                 </nav>
             </div>
         </div>
-      
-        <div class="row ">
+
+        <div class="row">
             @{
                 if (menuCliente)
                 {
-                    <div class="col-12 col-md-2 col-lg-2">
+                    <div class="col-12 col-md-2 col-lg-2  ">
                         @* inserir o menu do cliente aqui *@
                     </div>
                 }
@@ -60,12 +64,15 @@
 
             </div>
         </div>
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now - MyBI Soluções</p>
-            <span class="media-object flag-icon flag-icon-br"></span>
-        </footer>
+
+
     </div>
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now - MyBI Soluções</p>
+        <span class="media-object flag-icon flag-icon-br"></span>
+    </footer>
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/layout")

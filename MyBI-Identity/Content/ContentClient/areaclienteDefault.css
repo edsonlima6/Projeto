@@ -1,0 +1,127 @@
+/*body[class*="pctB"]*/
+/*select.form-control:not([size]):not([multiple]) {
+    height: 34px!important;
+}*/
+.opac{
+    background-image: url(../../Image/btcBody.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.5;
+    /*background-color: #CD96CD;*/
+}
+.form-control {
+    height: 28px!important;
+}
+.pictureuser {
+    width: inherit;
+    height: 180px;
+}
+.mt-6{
+    margin-top: 100px;
+}
+#navbarSupportedContent15 {
+    display: block;
+}
+
+a{
+    font-size: 16px!important;
+    color: #e2e6ea;
+}
+ul li[class*="list-group-item"]{
+    background-color: #563d7c!important;
+}
+.disableMenu{
+    background-color: #563d7c;
+}
+.menu {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+.rpad{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.widthRow{
+    width:inherit!important;
+}
+
+div[id=liga], #liga, #rowMenuMobile, #month{
+    display: none;
+} 
+ul li{
+    border: none !important;
+}
+ul li:hover{
+    background-color: #e2e6ea;
+    cursor: pointer;
+    
+}
+li > ul li{
+    background-color:inherit !important;
+    cursor: pointer;
+}
+.removeWithform{
+    width: 100px!important;
+}
+.after{
+    border: none;
+    box-shadow:0px;
+}
+.after:focus{
+    box-shadow:0 0 0 0.2rem transparent !important;
+}
+.imgAj{
+    height: 250px ;
+    width: inherit;
+}
+
+.menu:hover{
+   
+    box-shadow:2px 2px slateblue;
+}
+#rowMenuMobile {
+    height: 50px !important;
+}
+/* .row{
+    height: 100%!important; 
+} */
+.edcolor {
+    background-color: #563d7c !important;
+    opacity:1;
+}
+
+.warning {
+    color: aliceblue !important;
+}
+.rBtn{
+    width:inherit!important;
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        padding-left: 0px !important;
+    }
+
+    #rowMenuMobile {
+        display: block !important;
+    }
+
+    #divImageUser, .buttonMenu, #navbarSupportedContent15{
+        display: none;
+    }
+    /* #navbarSupportedContent15{
+        position: absolute;
+    } */
+    div[id=liga] {
+        display: block !important;
+        height: 30px !important;
+    }
+}
+
+@media screen and (min-width: 605px) {
+    #navbarSupportedContent15 {
+        display: block!important;
+    }
+  }
