@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyBI_Identity.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,13 @@ namespace MyBI_Identity.Controllers
     {
         // GET: Client
         public ActionResult Index()
+        {
+            return View("EmpresaCadastro");
+        }
+
+
+        [HttpPost]
+        public ActionResult EmpresaCadastro(EmpresaViewModels empresaViewModels)
         {
             return View("EmpresaCadastro");
         }

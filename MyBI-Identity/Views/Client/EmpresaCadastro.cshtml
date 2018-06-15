@@ -1,26 +1,42 @@
-﻿
+﻿@model MyBI_Identity.Models.EmpresaViewModels
 @{
+    /**/
+
     Layout = "~/Views/Shared/_LayoutAreaCliente.cshtml";
 }
-<form>
+@using (Html.BeginForm("", "", FormMethod.Post))
+{
+    @Html.ValidationSummary(true);
+
+    @*<form>*@
     <div class="form-row">
         <div class="form-group col-md-6">
-            <label for="inputEmail4" class="col-form-label">Razão Social</label>
-            <input type="text" class="form-control" id="inputEmail4" placeholder="Razão Social">
+            @*<label for="inputEmail4" class="col-form-label">Razão Social</label>*@
+            @*<input type="text" class="form-control" id="inputEmail4" placeholder="Razão Social">*@
+            @Html.LabelFor(r => r.sRazaoSocial, new { @class = "col-form-label" })
+            @Html.TextBoxFor(r => r.sRazaoSocial, new { @class = "form-control", @id = "inputEmail4", placeholder = "Razão Social" })
+
         </div>
         <div class="form-group col-md-6">
-            <label for="inputPassword4" class="col-form-label">CNPJ/CPF</label>
-            <input type="text" class="form-control" name="idDocument" id="idDocument">
+            @*<label for="inputPass'word4" class="col-form-label">CNPJ/CPF</label>
+            <input type="text" class="form-control" name="idDocument" id="idDocument">*@
+            @Html.LabelFor(c => c.sCnpjCpf, new { @class = "col-form-label" })
+            @Html.TextBoxFor(c => c.sCnpjCpf, new { @class = "form-control", @id = "inputEmail4", placeholder =  "CNPJ/CPF" })
+
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
-            <label for="inputAddress2" class="col-form-label">Endereço</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Rua,Numero, Bairro">
+            @*<label for="inputAddress2" class="col-form-label">Endereço</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Rua,Numero, Bairro">*@
+            @Html.LabelFor(c => c.sEndereco, new { @class = "col-form-label" })
+            @Html.TextBoxFor(c => c.sEndereco, new { @class = "form-control", @id = "inputAddress2", placeholder = "Endereço" })
         </div>
         <div class="form-group col-md-4">
-            <label for="inputCity" class="col-form-label">Cidade</label>
-            <input type="text" class="form-control" id="inputCity" placeholder="Cidade">
+            @*<label for="inputCity" class="col-form-label">Cidade</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Cidade">*@
+            @Html.LabelFor(c => c.sCidade, new { @class = "col-form-label" })
+            @Html.TextBoxFor(c => c.sCidade, new { @class = "form-control", @id = "inputCity", placeholder = "Cidade" })
         </div>
         <div class="form-group col-md-2">
             <label for="inputState" class="col-form-label">Estado</label>
@@ -35,12 +51,16 @@
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
-            <label for="inputAddress" class="col-form-label">Contato</label>
-            <input type="tel" class="form-control" name="" id="idNumberPhone" placeholder="Telefone de Contato">
+            @*<label for="inputAddress" class="col-form-label">Contato</label>
+            <input type="tel" class="form-control" name="" id="idNumberPhone" placeholder="Telefone de Contato">*@
+            @Html.LabelFor(c => c.nContato, new { @class = "col-form-label" })
+            @Html.TextBoxFor(c => c.nContato, new { @class = "form-control", @id = "idNumberPhone", placeholder = "Telefone de Contato" })
         </div>
         <div class="form-group col-md-6 mt-md-2">
-            <label for="inputZip">CEP</label>
-            <input type="text" class="form-control" placeholder="CEP" name="CEP" id="idCEP">
+            @*<label for="inputZip">CEP</label>
+            <input type="text" class="form-control" placeholder="CEP" name="CEP" id="idCEP">*@
+            @Html.LabelFor(c => c.sCep, new { @class = "col-form-label" })
+            @Html.TextBoxFor(c => c.sCep, new { @class = "form-control", @id = "idCEP", placeholder = "CEP" })
         </div>
 
     </div>
@@ -77,12 +97,15 @@
         </select>
     </div>
     <div class="form-group mt-md-3">
-        <label for="inputEmail4" class="col-form-label">Mensalidade Aproximado(a): &nbsp;</label>
-        <input type="text" class="form-control removeWithform" id="idValueMensal">
+        @*<label for="inputEmail4" class="col-form-label">Mensalidade Aproximado(a): &nbsp;</label>
+        <input type="text" class="form-control removeWithform" id="idValueMensal">*@
+        @Html.LabelFor(c => c.nValorAproximado, new { @class = "col-form-label" })&nbsp;
+        @Html.TextBoxFor(c => c.nValorAproximado, new { @class = "form-control removeWithform", @id = "idValueMensal", placeholder = "R$ 0,00" })
     </div>
 
     <br />
     <button type="submit" class="btn btn-primary">Cadastrar</button>
-</form>
+    @*</form>*@
 
-@*<script src="~/Scripts/areaclienteDefault.js"></script>*@
+    @*<script src="~/Scripts/areaclienteDefault.js"></script>*@
+}
