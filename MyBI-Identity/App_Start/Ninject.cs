@@ -28,6 +28,10 @@ namespace MyBI_Identity.App_Start
             kernel.Bind<IUsuarioService>().To<UsuarioService>();
             kernel.Bind<IUsuarioRepository>().To<UsuarioRespository>();
 
+            kernel.Bind<ITipoEmpresaApplication>().To<TipoEmpresaApplication>();
+            kernel.Bind<ITipoEmpresaService>().To<TipoEmpresaService>();
+            kernel.Bind<ITipoEmpresaRepository>().To<TipoEmpresaRepository>();
+
             //Registra o container no ASP.NET
             DependencyResolver.SetResolver(new NinjectDependencyResolver(kernel));
         }

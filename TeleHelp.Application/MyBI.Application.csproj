@@ -58,6 +58,7 @@
     <Compile Include="Interface\IRepresentanteApplication.cs" />
     <Compile Include="Interface\IRepresentanteUsuarioApplication.cs" />
     <Compile Include="Interface\ITelaApplication.cs" />
+    <Compile Include="Interface\ITipoEmpresaApplication.cs" />
     <Compile Include="Interface\IUsuarioAplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AplicationBase.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Services\RepresentanteApplication.cs" />
     <Compile Include="Services\RepresentanteUsuarioApplcation.cs" />
     <Compile Include="Services\TelaApplication.cs" />
+    <Compile Include="Services\TipoEmpresaApplication.cs" />
     <Compile Include="Services\UsuarioAplication.cs" />
   </ItemGroup>
   <ItemGroup>

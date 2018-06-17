@@ -9,11 +9,11 @@ namespace MyBI_Identity.Controllers
 {
     public class HomeController : Controller
     {
-        IUsuarioAplication usuarioAplication;
-        public HomeController(IUsuarioAplication _usuarioAplication)
+        public HomeController()
         {
-            
+
         }
+
         public ActionResult Index()
         {
             return View();
@@ -22,7 +22,6 @@ namespace MyBI_Identity.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
         }
 

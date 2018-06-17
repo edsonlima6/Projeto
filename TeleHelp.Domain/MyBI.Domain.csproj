@@ -188,6 +188,7 @@
     <Compile Include="Entities\TelefoneEmpresa.cs" />
     <Compile Include="Entities\TelefoneFornecedor.cs" />
     <Compile Include="Entities\TipoEmail.cs" />
+    <Compile Include="Entities\TipoEmpresa.cs" />
     <Compile Include="Entities\TipoEndereco.cs" />
     <Compile Include="Entities\TipoInteresse.cs" />
     <Compile Include="Entities\TipoTelefone.cs" />
@@ -255,6 +256,7 @@
     <Compile Include="Interfaces\Repositories\ITelefoneFornecedorRepository.cs" />
     <Compile Include="Interfaces\Repositories\IUsuarioRepository.cs" />
     <Compile Include="Interfaces\Repositories\IVendedorRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ITipoEmpresaRepository.cs" />
     <Compile Include="Interfaces\Services\IAcaoService.cs" />
     <Compile Include="Interfaces\Services\IAgendaService.cs" />
     <Compile Include="Interfaces\Services\IAlergiaService.cs" />
@@ -309,6 +311,7 @@
     <Compile Include="Interfaces\Services\ITelaService.cs" />
     <Compile Include="Interfaces\Services\ITelefoneEmpresaService.cs" />
     <Compile Include="Interfaces\Services\ITelefoneFornecedorService.cs" />
+    <Compile Include="Interfaces\Services\ITipoEmpresaService.cs" />
     <Compile Include="Interfaces\Services\IUnidadeService.cs" />
     <Compile Include="Interfaces\Services\IUsuarioService.cs" />
     <Compile Include="Interfaces\Services\IVendedorService.cs" />
@@ -368,6 +371,7 @@
     <Compile Include="Services\TelaService.cs" />
     <Compile Include="Services\TelefoneEmpresaService.cs" />
     <Compile Include="Services\TelefoneFornecedorService.cs" />
+    <Compile Include="Services\TipoEmpresaService.cs" />
     <Compile Include="Services\UnidadeService.cs" />
     <Compile Include="Services\ServiceBase.cs" />
     <Compile Include="Services\UsuarioService.cs" />

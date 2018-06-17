@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TeleHelp.Domain.Entities;
 using TeleHelp.Infraestrutura.Data.Mapping;
+using System.Configuration;
 
 namespace TeleHelp.Infraestrutura.Data.Contexto
 {
@@ -14,11 +15,12 @@ namespace TeleHelp.Infraestrutura.Data.Contexto
     {
         public MyBIContexto() : base("MyBI")
         {
+            //ConfigurationManager.ConnectionStrings["Rola"].ConnectionString.ToString()
             Database.SetInitializer<MyBIContexto>(new CreateDatabaseIfNotExists<MyBIContexto>());
         }
 
-        //public virtual DbSet<Bonificacao> Bonificacao { get; set; }
-        //public virtual DbSet<BloqueioServico> BloqueioServico { get; set; }
+        public virtual DbSet<TipoEmpresa> TipoEmpresas { get; set; }
+        public virtual DbSet<Empresa> Empresas { get; set; }
         public virtual DbSet<Usuario> Usuarios{ get; set; }
         //public virtual DbSet<Banco> Bancos { get; set; }
         //public virtual DbSet<Categoria> Categorias { get; set; }
@@ -69,8 +71,8 @@ namespace TeleHelp.Infraestrutura.Data.Contexto
             //modelBuilder.Configurations.Add(new TipoEnderecoMap());
             //modelBuilder.Configurations.Add(new EnderecoClienteMap());
             //modelBuilder.Configurations.Add(new ClienteContaMap());
-            //modelBuilder.Configurations.Add(new BloqueioServicoMap());
-            //modelBuilder.Configurations.Add(new AuditoriaMap());
+            modelBuilder.Configurations.Add(new TipoEmpresaMap());
+            modelBuilder.Configurations.Add(new EmpresaMap());
             modelBuilder.Configurations.Add(new UsuarioMap());
             //modelBuilder.Configurations.Add(new AlergiaClienteMap());
             //modelBuilder.Configurations.Add(new ServicoMap());

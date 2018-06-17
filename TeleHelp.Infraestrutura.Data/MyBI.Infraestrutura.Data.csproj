@@ -43,8 +43,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,6 +73,7 @@
     <Compile Include="Mapping\ComboMap.cs" />
     <Compile Include="Mapping\ComboServicoMap.cs" />
     <Compile Include="Mapping\DepartamentoMap.cs" />
+    <Compile Include="Mapping\EmpresaMap.cs" />
     <Compile Include="Mapping\EnderecoClienteMap.cs" />
     <Compile Include="Mapping\FuncionalidadeTelaMap.cs" />
     <Compile Include="Mapping\GrupoMap.cs" />
@@ -86,12 +87,9 @@
     <Compile Include="Mapping\ServicoMap.cs" />
     <Compile Include="Mapping\SistemaMap.cs" />
     <Compile Include="Mapping\TelaMap.cs" />
+    <Compile Include="Mapping\TipoEmpresaMap.cs" />
     <Compile Include="Mapping\TipoEnderecoMap.cs" />
     <Compile Include="Mapping\UsuarioMap.cs" />
-    <Compile Include="Migrations\201805092340274_RetiraSenha.cs" />
-    <Compile Include="Migrations\201805092340274_RetiraSenha.Designer.cs">
-      <DependentUpon>201805092340274_RetiraSenha.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\CargoRepositories.cs" />
@@ -102,6 +100,7 @@
     <Compile Include="Repositorio\RepresentanteRepository.cs" />
     <Compile Include="Repositorio\RepresentanteUsuarioRepository.cs" />
     <Compile Include="Repositorio\TelaRepository.cs" />
+    <Compile Include="Repositorio\TipoEmpresaRepository.cs" />
     <Compile Include="Repositorio\UsuarioRespository.cs" />
     <Compile Include="Repositorio\MenuRepository.cs" />
     <Compile Include="Repositorio\RepositoryBase.cs" />
@@ -110,6 +109,15 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -117,11 +125,6 @@
       <Project>{31bb4e3b-518d-400c-af32-a1d66755dd30}</Project>
       <Name>MyBI.Domain</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805092340274_RetiraSenha.resx">
-      <DependentUpon>201805092340274_RetiraSenha.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

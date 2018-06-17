@@ -43,7 +43,15 @@ namespace TeleHelp.Infraestrutura.Data.Repositorio
 
         public IEnumerable<TEntity> GetAll()
         {
-            return Db.Set<TEntity>().AsNoTracking().ToList();
+            try
+            {
+                return Db.Set<TEntity>().AsNoTracking().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
         }
 
         public TEntity GetById(int? id)

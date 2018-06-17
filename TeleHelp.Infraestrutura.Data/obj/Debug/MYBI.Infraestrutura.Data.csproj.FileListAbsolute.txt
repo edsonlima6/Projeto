@@ -58,8 +58,6 @@ C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Infraestrutura.Data\bin\De
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Infraestrutura.Data\bin\Debug\EntityFramework.xml
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Infraestrutura.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Infraestrutura.Data\obj\Debug\MyBI.Infraestrutura.Data.csprojAssemblyReference.cache
-C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Infraestrutura.Data\obj\Debug\TeleHelp.Infraestrutura.Data.Migrations.RetiraSenha.resources
-C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Infraestrutura.Data\obj\Debug\MyBI.Infraestrutura.Data.csproj.GenerateResource.cache
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Infraestrutura.Data\obj\Debug\MyBI.Infraestrutura.Data.csproj.CoreCompileInputs.cache
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Infraestrutura.Data\obj\Debug\MyBI.Infraestrutura.Data.csproj.CopyComplete
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\TeleHelp.Infraestrutura.Data\obj\Debug\TeleHelp.Infraestrutura.Data.dll
