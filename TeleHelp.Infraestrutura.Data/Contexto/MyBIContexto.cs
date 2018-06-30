@@ -22,7 +22,7 @@ namespace TeleHelp.Infraestrutura.Data.Contexto
         public virtual DbSet<TipoEmpresa> TipoEmpresas { get; set; }
         public virtual DbSet<Empresa> Empresas { get; set; }
         public virtual DbSet<Usuario> Usuarios{ get; set; }
-        //public virtual DbSet<Banco> Bancos { get; set; }
+        public virtual DbSet<Estado> Estados { get; set; }
         //public virtual DbSet<Categoria> Categorias { get; set; }
         //public virtual DbSet<Cep> Ceps { get; set; }
         //public virtual DbSet<Cidade> Cidades { get; set; }
@@ -74,7 +74,7 @@ namespace TeleHelp.Infraestrutura.Data.Contexto
             modelBuilder.Configurations.Add(new TipoEmpresaMap());
             modelBuilder.Configurations.Add(new EmpresaMap());
             modelBuilder.Configurations.Add(new UsuarioMap());
-            //modelBuilder.Configurations.Add(new AlergiaClienteMap());
+            modelBuilder.Configurations.Add(new EstadoMap());
             //modelBuilder.Configurations.Add(new ServicoMap());
             //modelBuilder.Configurations.Add(new ComboServicoMap());
             //modelBuilder.Configurations.Add(new ComboMap());

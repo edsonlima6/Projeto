@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyBI_Identity.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,6 +18,7 @@ namespace MyBI_Identity
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             App_Start.Ninject.ConfigurarDependencias();
+            MapperConfig.RegisterMappings();
         }
     }
 }

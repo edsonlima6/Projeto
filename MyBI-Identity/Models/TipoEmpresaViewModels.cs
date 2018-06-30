@@ -9,6 +9,6 @@ namespace MyBI_Identity.Models
     {
         public int idTipoEmpresa { get; set; }
         public string sNome { get; set; }
-        public int sDescricao { get; set; }
+        public string sDescricao { get; set; }
     }
 }

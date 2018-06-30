@@ -60,5 +60,6 @@ namespace MyBI_Identity.Models
 
         [Required(ErrorMessage ="Tipo de empresa obrigatório")]
         public List<TipoEmpresaViewModels> tpEmpresas { get; set; }
+        
     }
 }

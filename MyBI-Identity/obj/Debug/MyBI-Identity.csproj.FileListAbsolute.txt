@@ -138,3 +138,8 @@ C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\obj\Debug\MyBI-Identi
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\obj\Debug\MyBI-Identity.csproj.CopyComplete
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\obj\Debug\MyBI-Identity.dll
 C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\obj\Debug\MyBI-Identity.pdb
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\bin\AutoMapper.dll
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\bin\System.ValueTuple.dll
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\bin\AutoMapper.pdb
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\bin\AutoMapper.xml
+C:\Users\edson\Documents\GitHub\MyBI\Projeto\MyBI-Identity\bin\System.ValueTuple.xml

@@ -7,8 +7,8 @@ namespace TeleHelp.Domain.Entities
     {
         public Estado()
         {
-            AliquotaICMS = new HashSet<AliquotaICMS>();
-            Cidade = new HashSet<Cidade>();
+            //AliquotaICMS = new HashSet<AliquotaICMS>();
+            //Cidade = new HashSet<Cidade>();
         }
         
         public int IdEstado { get; set; }
@@ -17,12 +17,12 @@ namespace TeleHelp.Domain.Entities
 
         public string Sigla { get; set; }
 
-        public int IdPais { get; set; }
+        public int? IdPais { get; set; }
         
-        public virtual ICollection<AliquotaICMS> AliquotaICMS { get; set; }
+        //public virtual ICollection<AliquotaICMS> AliquotaICMS { get; set; }
         
-        public virtual ICollection<Cidade> Cidade { get; set; }
+        //public virtual ICollection<Cidade> Cidade { get; set; }
 
-        public virtual Pais Pais { get; set; }
+        //public virtual Pais Pais { get; set; }
     }
 }

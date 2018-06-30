@@ -75,6 +75,7 @@
     <Compile Include="Mapping\DepartamentoMap.cs" />
     <Compile Include="Mapping\EmpresaMap.cs" />
     <Compile Include="Mapping\EnderecoClienteMap.cs" />
+    <Compile Include="Mapping\EstadoMap.cs" />
     <Compile Include="Mapping\FuncionalidadeTelaMap.cs" />
     <Compile Include="Mapping\GrupoMap.cs" />
     <Compile Include="Mapping\GrupoUsuarioMap.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\CargoRepositories.cs" />
     <Compile Include="Repositorio\DepartamentoRepository.cs" />
+    <Compile Include="Repositorio\EstadoRepository.cs" />
     <Compile Include="Repositorio\GrupoRepository.cs" />
     <Compile Include="Repositorio\GrupoTelaRepository.cs" />
     <Compile Include="Repositorio\GrupoUsuarioRepository.cs" />

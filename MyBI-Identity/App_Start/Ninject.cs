@@ -32,6 +32,10 @@ namespace MyBI_Identity.App_Start
             kernel.Bind<ITipoEmpresaService>().To<TipoEmpresaService>();
             kernel.Bind<ITipoEmpresaRepository>().To<TipoEmpresaRepository>();
 
+            kernel.Bind<IEstadoApplication>().To<EstadoApplication>();
+            kernel.Bind<IEstadoService>().To<EstadoService>();
+            kernel.Bind<IEstadoRepository>().To<EstadoRepository>();
+
             //Registra o container no ASP.NET
             DependencyResolver.SetResolver(new NinjectDependencyResolver(kernel));
         }

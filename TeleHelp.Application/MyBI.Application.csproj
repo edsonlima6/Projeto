@@ -51,6 +51,7 @@
     <Compile Include="Interface\IAplicationBase.cs" />
     <Compile Include="Interface\ICargoApplication.cs" />
     <Compile Include="Interface\IDepartamentoAppication.cs" />
+    <Compile Include="Interface\IEstadoApplication.cs" />
     <Compile Include="Interface\IGrupoApplication.cs" />
     <Compile Include="Interface\IGrupoTelaApplication.cs" />
     <Compile Include="Interface\IGrupoUsuario.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Services\AplicationBase.cs" />
     <Compile Include="Services\CargoApplication.cs" />
     <Compile Include="Services\DepartamentoApplication.cs" />
+    <Compile Include="Services\EstadoApplication.cs" />
     <Compile Include="Services\GrupoApplication.cs" />
     <Compile Include="Services\GrupoTelaApplication.cs" />
     <Compile Include="Services\GrupoUsuarioApplication.cs" />
