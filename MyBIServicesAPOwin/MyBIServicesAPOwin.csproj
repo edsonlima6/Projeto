@@ -339,10 +339,6 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\IdentityEduardo\IdentityIsolation\src\EP.IdentityIsolation.Infra.CrossCutting.Identity\EP.IdentityIsolation.Infra.CrossCutting.Identity.csproj">
-      <Project>{9062b1c5-f32d-435e-93b2-2e7f6268b2a1}</Project>
-      <Name>EP.IdentityIsolation.Infra.CrossCutting.Identity</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TeleHelp.Application\MyBI.Application.csproj">
       <Project>{aea37fb0-cbab-43de-99d1-da75e19b4153}</Project>
       <Name>MyBI.Application</Name>
@@ -350,6 +346,10 @@
     <ProjectReference Include="..\TeleHelp.Domain\MyBI.Domain.csproj">
       <Project>{31bb4e3b-518d-400c-af32-a1d66755dd30}</Project>
       <Name>MyBI.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeleHelp.Infraestrutura.Data\EP.IdentityIsolation.Infra.CrossCutting.Identity\EP.IdentityIsolation.Infra.CrossCutting.Identity.csproj">
+      <Project>{9062b1c5-f32d-435e-93b2-2e7f6268b2a1}</Project>
+      <Name>EP.IdentityIsolation.Infra.CrossCutting.Identity</Name>
     </ProjectReference>
     <ProjectReference Include="..\TeleHelp.Infraestrutura.Data\MyBI.Infraestrutura.Data.csproj">
       <Project>{2ed61b43-7ab5-4be6-b08f-882928f41e96}</Project>
