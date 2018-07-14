@@ -1,4 +1,7 @@
 ﻿using AutoMapper;
+using MyBI_Identity.Models;
+using MyBI_Identity.Models.AreaCliente;
+using TeleHelp.Domain.Entities;
 
 namespace MyBI_Identity.App_Start
 {
@@ -6,7 +9,9 @@ namespace MyBI_Identity.App_Start
     {
         public ViewModelToDomainMappingProfile()
         {
-
+            CreateMap<EstadoViewModel, Estado >();
+            CreateMap<TipoEmpresaViewModels, TipoEmpresa>();
+            CreateMap<EmpresaViewModels, Empresa>();
         }
     }
 }

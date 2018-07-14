@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MyBI_Identity.Models;
+using MyBI_Identity.Models.AreaCliente;
 using TeleHelp.Domain.Entities;
 
 namespace MyBI_Identity.App_Start
@@ -10,6 +11,7 @@ namespace MyBI_Identity.App_Start
         {
             CreateMap<Empresa, EmpresaViewModels>();
             CreateMap<TipoEmpresa, TipoEmpresaViewModels>();
+            CreateMap<Estado, EstadoViewModel>();
         }
     }
 }

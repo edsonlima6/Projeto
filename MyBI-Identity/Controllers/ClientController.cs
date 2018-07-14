@@ -1,5 +1,6 @@
 ﻿using MyBI_Identity.App_Start;
 using MyBI_Identity.Models;
+using MyBI_Identity.Models.AreaCliente;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,30 +30,28 @@ namespace MyBI_Identity.Controllers
         public ActionResult EmpresaCadastro()
         {
             var empresaVM = new EmpresaViewModels();
-            var tp = _tipoEmpresaApplication.GetAll()
-                                            .ToList();
-
-
-            var vm = MapperConfig._Mapper
-                                 .Map<List<TipoEmpresaViewModels>>(tp);
-
-            var estado = _estadoApplication.GetAll()
-                                           .Select(e => new { idEstado = e.IdEstado, sigla = e.Sigla });
-
-
-
-            return View("EmpresaCadastro");
+            var tpE = _tipoEmpresaApplication.GetAll().ToList();
+            var estado = _estadoApplication.GetAll().ToList();
+            empresaVM.tpEmpresasVM  = MapperConfig._Mapper.Map<List<TipoEmpresaViewModels>>(tpE);
+            empresaVM.EstadoVM = MapperConfig._Mapper.Map<List<EstadoViewModel>>(estado);
+            
+            return View("EmpresaCadastro", empresaVM);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult EmpresaCadastro(EmpresaViewModels empresaViewModels)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                return View("Home");
+                var empresaVM = new EmpresaViewModels();
+                var tpE = _tipoEmpresaApplication.GetAll().ToList();
+                var estado = _estadoApplication.GetAll().ToList();
+                empresaVM.tpEmpresasVM = MapperConfig._Mapper.Map<List<TipoEmpresaViewModels>>(tpE);
+                empresaVM.EstadoVM = MapperConfig._Mapper.Map<List<EstadoViewModel>>(estado);
+                return View(empresaViewModels);
             }
-            return View(empresaViewModels);
+            return View("Home");
         }
 
     }

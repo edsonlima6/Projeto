@@ -214,10 +214,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\EmpresaViewModels.cs" />
+    <Compile Include="Models\AreaCliente\EmpresaViewModels.cs" />
+    <Compile Include="Models\AreaCliente\EstadoViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\TipoEmpresaViewModels.cs" />
+    <Compile Include="Models\AreaCliente\TipoEmpresaViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
