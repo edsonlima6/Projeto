@@ -20,9 +20,7 @@
         <div class="row" id="fix">
             <div class="col-12 col-md-12 col-lg-12">
                 <nav class="navbar navbar-dark rgb">
-                    <div class="" id="disableMobi">
-                        <button class="btn btn-outline-warning">Login</button>
-                    </div>
+
                     <nav class="navbar navbar-expand-lg navbar-light rgb">
                         @*<a class="navbar-brand" href="#">Navbar</a>*@
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,6 +44,9 @@
                             </ul>
                         </div>
                     </nav>
+                    <div class="" id="disableMobi">
+                        <button class="btn btn-outline-warning" data-toggle="modal" data-target=".bd-example-modal-lg">Login</button>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -59,14 +60,30 @@
                     </div>
                 }
             }
-            <div class="col-12 col-md-12 col-lg-12 mt-5 pt-4">
-                @RenderBody()
+                    <div class="col-12 col-md-12 col-lg-12 mt-5 pt-4">
+                        @RenderBody()
 
-            </div>
+
+
+
+                        @* Modal *@
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    Tome amor
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
         </div>
 
 
     </div>
+
+
+
+
     <hr />
     <footer>
         <p>&copy; @DateTime.Now - MyBI Soluções</p>

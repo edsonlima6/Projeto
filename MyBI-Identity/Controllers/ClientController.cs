@@ -1,6 +1,7 @@
 ﻿using MyBI_Identity.App_Start;
 using MyBI_Identity.Models;
 using MyBI_Identity.Models.AreaCliente;
+using Ninject;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,23 @@ namespace MyBI_Identity.Controllers
             _tipoEmpresaApplication = tipoEmpresaApplication;
             _estadoApplication = estadoApplication;
         }
+
+        List<TipoEmpresaViewModels> tipoEmpresaViewModels;
+        List<TipoEmpresaViewModels> ListTipoEmpresa
+        {
+            get { return (tipoEmpresaViewModels == null) ? MapperConfig._Mapper.Map<List<TipoEmpresaViewModels>>(_tipoEmpresaApplication.GetAll().ToList()) : tipoEmpresaViewModels; }
+
+        }
+
+        List<EstadoViewModel> estadoViewModels;
+        List<EstadoViewModel> ListEstadoVM
+        {
+            get { return estadoViewModels ?? MapperConfig._Mapper.Map<List<EstadoViewModel>>(_estadoApplication.GetAll().ToList()); }
+        }
+
+        IEmpresaApplication _empresaApplication { get { return App_Start.Ninject.kernel.Get<IEmpresaApplication>(); } }
+
+
         // GET: Client
         public ActionResult Index()
         {
@@ -30,11 +48,8 @@ namespace MyBI_Identity.Controllers
         public ActionResult EmpresaCadastro()
         {
             var empresaVM = new EmpresaViewModels();
-            var tpE = _tipoEmpresaApplication.GetAll().ToList();
-            var estado = _estadoApplication.GetAll().ToList();
-            empresaVM.tpEmpresasVM  = MapperConfig._Mapper.Map<List<TipoEmpresaViewModels>>(tpE);
-            empresaVM.EstadoVM = MapperConfig._Mapper.Map<List<EstadoViewModel>>(estado);
-            
+            empresaVM.tpEmpresasVM = ListTipoEmpresa;
+            empresaVM.EstadoVM = ListEstadoVM;            
             return View("EmpresaCadastro", empresaVM);
         }
 
@@ -44,13 +59,14 @@ namespace MyBI_Identity.Controllers
         {
             if (!ModelState.IsValid)
             {
-                var empresaVM = new EmpresaViewModels();
-                var tpE = _tipoEmpresaApplication.GetAll().ToList();
-                var estado = _estadoApplication.GetAll().ToList();
-                empresaVM.tpEmpresasVM = MapperConfig._Mapper.Map<List<TipoEmpresaViewModels>>(tpE);
-                empresaVM.EstadoVM = MapperConfig._Mapper.Map<List<EstadoViewModel>>(estado);
+                empresaViewModels.tpEmpresasVM = ListTipoEmpresa;
+                empresaViewModels.EstadoVM = ListEstadoVM;
                 return View(empresaViewModels);
             }
+
+            _empresaApplication.Add(MapperConfig._Mapper.Map<Empresa>(empresaViewModels));
+
+
             return View("Home");
         }
 

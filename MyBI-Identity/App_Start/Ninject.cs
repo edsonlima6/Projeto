@@ -16,13 +16,16 @@ namespace MyBI_Identity.App_Start
 {
     public class Ninject
     {
+        //Cria o Container
+        public static IKernel kernel { get; private set; }
+
         public static void ConfigurarDependencias()
         {
-            //Cria o Container 
-            IKernel kernel = new StandardKernel();
+
+            kernel = new StandardKernel();
 
             //Instrução para mapear a interface IPessoa para a classe concreta Pessoa
-            
+
 
             kernel.Bind<IUsuarioAplication>().To<UsuarioAplication>();
             kernel.Bind<IUsuarioService>().To<UsuarioService>();
@@ -35,6 +38,10 @@ namespace MyBI_Identity.App_Start
             kernel.Bind<IEstadoApplication>().To<EstadoApplication>();
             kernel.Bind<IEstadoService>().To<EstadoService>();
             kernel.Bind<IEstadoRepository>().To<EstadoRepository>();
+
+            kernel.Bind<IEmpresaApplication>().To<EmpresaApllication>();
+            kernel.Bind<IEmpresaService>().To<EmpresaService>();
+            kernel.Bind<IEmpresaRepository>().To<EmpresaRepository>();
 
             //Registra o container no ASP.NET
             DependencyResolver.SetResolver(new NinjectDependencyResolver(kernel));

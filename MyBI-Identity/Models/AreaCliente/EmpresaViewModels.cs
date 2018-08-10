@@ -44,9 +44,7 @@ namespace MyBI_Identity.Models
         [Display(Name = "Cidade")]
         public string sCidade { get; set; }
 
-        [Display(Name = "Estado")]
-        [Required(ErrorMessage = "Estado é Obrigatório")]
-        [MaxLength(2, ErrorMessage = "Estado Inválido")]
+ 
         public string sEstado { get; set; }
 
         [Display(Name = "Telefone Contato")]
@@ -64,11 +62,10 @@ namespace MyBI_Identity.Models
 
         [Display(Name = "Valor Aproximado")]
         public decimal nValorAproximado { get; set; }
+        
 
-        [Required(ErrorMessage ="Tipo de empresa obrigatório")]
         public List<TipoEmpresaViewModels> tpEmpresasVM { get; set; }
 
-        [Required(ErrorMessage = "Estado é obrigatório")]
         public List<EstadoViewModel> EstadoVM { get; set; }
     }
 }

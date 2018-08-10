@@ -85,3 +85,6 @@ img{
     margin-top:5%;
 }
 
+#btnHide{
+    display:none;
+}

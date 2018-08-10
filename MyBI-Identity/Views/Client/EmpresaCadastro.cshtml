@@ -6,53 +6,41 @@
 }
 @using (Html.BeginForm("EmpresaCadastro", "Client", FormMethod.Post))
 {
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-    @Html.ValidationSummary(false)
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>
-    @Html.AntiForgeryToken();    
-<div class="form-row">
-    <div class="form-group col-md-4">
-        @Html.LabelFor(r => r.sRazaoSocial, new { @class = "col-form-label" })
-        @Html.TextBoxFor(r => r.sRazaoSocial, new { @class = "form-control", @id = "inputEmail4", placeholder = "Nome da empresa" })
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        @Html.ValidationSummary(false)
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    @Html.AntiForgeryToken();
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            @Html.LabelFor(r => r.sRazaoSocial, new { @class = "col-form-label" })
+            @Html.TextBoxFor(r => r.sRazaoSocial, new { @class = "form-control", @id = "inputEmail4", placeholder = "Nome da empresa" })
 
-    </div>
-    <div class="form-group col-md-4">
-        @Html.LabelFor(c => c.idTipoEmpresa, new { @class = "col-form-label" })
-        @{
-            if (Model.tpEmpresasVM != null)
-            {
-                @Html.DropDownListFor(m => m.idTipoEmpresa, new SelectList(Model.tpEmpresasVM, "idTipoEmpresa", "sNome"), "Selecione...", new { @class = "form-control input-xlarge required" })
-            }
-        }
-    </div>
-    <div class="form-group col-md-4">
-        @Html.LabelFor(c => c.sCnpjCpf, new { @class = "col-form-label" })
-        @Html.TextBoxFor(c => c.sCnpjCpf, new { @class = "form-control ", @id = "inputEmail4", placeholder = "999.999.999-99" })
+        </div>
+        <div class="form-group col-md-4">
+            @Html.LabelFor(c => c.idTipoEmpresa, new { @class = "col-form-label" })
+            @Html.DropDownListFor(m => m.idTipoEmpresa, new SelectList(Model.tpEmpresasVM, "idTipoEmpresa", "sNome"), "Selecione...", new { @class = "form-control input-xlarge" })
+        </div>
+        <div class="form-group col-md-4">
+            @Html.LabelFor(c => c.sCnpjCpf, new { @class = "col-form-label" })
+            @Html.TextBoxFor(c => c.sCnpjCpf, new { @class = "form-control ", @id = "inputEmail4", placeholder = "999.999.999-99" })
 
+        </div>
     </div>
-</div>
     <div class="form-row">
         <div class="form-group col-md-6">
             @Html.LabelFor(c => c.sEndereco, new { @class = "col-form-label" })
             @Html.TextBoxFor(c => c.sEndereco, new { @class = "form-control  ", @id = "inputAddress2", placeholder = "Rua, Complemento, Bairro" })
         </div>
         <div class="form-group col-md-4">
-            @*<label for="inputCity" class="col-form-label">Cidade</label>
-            <input type="text" class="form-control" id="inputCity" placeholder="Cidade">*@
             @Html.LabelFor(c => c.sCidade, new { @class = "col-form-label" })
             @Html.TextBoxFor(c => c.sCidade, new { @class = "form-control  ", @id = "inputCity", placeholder = "Cidade" })
         </div>
         <div class="form-group col-md-2">
             @Html.LabelFor(c => c.idEstado, new { @class = "col-form-label" })
-            @{
-                if (Model.EstadoVM != null)
-                {
-                    @Html.DropDownListFor(m => m.idEstado, new SelectList(Model.EstadoVM, "IdEstado", "Sigla" ), "Selecione...", new { @class = "form-control input-xlarge required"})
-                }
-            }
+            @Html.DropDownListFor(m => m.idEstado, new SelectList(Model.EstadoVM, "IdEstado", "Sigla"), "Selecione...", new { @class = "form-control input-xlarge" })
         </div>
     </div>
     <div class="form-row">
@@ -69,13 +57,13 @@
     <div class="form-inline">
         <!-- RADIOS -->
         <div class="form-check form-check-inline">
-            @Html.RadioButtonFor(m => m.sCorrente, "option1", new { @class = "form-check-input  ", @id = "idCorrente" })
-            @Html.LabelFor(c => c.sCorrente, new { @class = "form-check-label" })
+            @Html.RadioButtonFor(m => m.sCorrente, "true", new { @class = "form-check-input  ", @id = "idCorrente" })
+            @Html.Label("Corrente", new { @class = "form-check-label" })
 
         </div>
         <div class="form-check form-check-inline">
-            @Html.RadioButtonFor(m => m.sCorrente, "option2", new { @class = "form-check-input  ", @id = "idCapital" })
-            @Html.LabelFor(c => c.sCorrente, new { @class = "form-check-label" })
+            @Html.RadioButtonFor(m => m.sCorrente, "false", new { @class = "form-check-input  ", @id = "idCapital" })
+            @Html.Label("Capital", new { @class = "form-check-label" })
         </div>
     </div>
     <!-- Mensal -->
@@ -87,28 +75,30 @@
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
-            <option value="3">4</option>
-            <option value="3">5</option>
-            <option value="3">6</option>
-            <option value="3">7</option>
-            <option value="3">8</option>
-            <option value="3">9</option>
-            <option value="3">10</option>
-            <option value="3">11</option>
-            <option value="3">12</option>
-            <option value="3">24</option>
-            <option value="3">36</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="24">24</option>
+            <option value="35">36</option>
         </select>
     </div>
     <div class="form-group mt-md-3">
         @*<label for="inputEmail4" class="col-form-label">Mensalidade Aproximado(a): &nbsp;</label>
-        <input type="text" class="form-control removeWithform" id="idValueMensal">*@
+            <input type="text" class="form-control removeWithform" id="idValueMensal">*@
         @Html.LabelFor(c => c.nValorAproximado, new { @class = "col-form-label" })&nbsp;
         @Html.TextBoxFor(c => c.nValorAproximado, new { @class = "form-control removeWithform  ", @id = "idValueMensal", placeholder = "R$ 0,00" })
     </div>
 
     <br />
     <button type="submit" class="btn btn-primary">Cadastrar</button>
+
+
     @*</form>*@
 
     @*<script src="~/Scripts/areaclienteDefault.js"></script>*@

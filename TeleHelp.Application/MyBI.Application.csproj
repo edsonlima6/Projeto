@@ -56,6 +56,7 @@
     <Compile Include="Interface\IGrupoTelaApplication.cs" />
     <Compile Include="Interface\IGrupoUsuario.cs" />
     <Compile Include="Interface\IGrupoUsuarioApplication.cs" />
+    <Compile Include="Interface\IEmpresaApplication.cs" />
     <Compile Include="Interface\IRepresentanteApplication.cs" />
     <Compile Include="Interface\IRepresentanteUsuarioApplication.cs" />
     <Compile Include="Interface\ITelaApplication.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Services\AplicationBase.cs" />
     <Compile Include="Services\CargoApplication.cs" />
     <Compile Include="Services\DepartamentoApplication.cs" />
+    <Compile Include="Services\EmpresaApllication.cs" />
     <Compile Include="Services\EstadoApplication.cs" />
     <Compile Include="Services\GrupoApplication.cs" />
     <Compile Include="Services\GrupoTelaApplication.cs" />
