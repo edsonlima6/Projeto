@@ -5,8 +5,10 @@ $( document ).ready(function() {
     $("#click").click(function(e){
         HabilitaSubMenu(e);
     });
-    
 });
+
+
+
 
 function MasksEnable() {
     console.log("Entrou otario");

@@ -56,7 +56,7 @@ namespace MyBI_Identity.Controllers
         //
         // GET: /Account/Login
         [AllowAnonymous]
-        public ActionResult Login(string returnUrl)
+        public ActionResult Login2(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
             return View();

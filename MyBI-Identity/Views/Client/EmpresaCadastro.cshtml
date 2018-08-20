@@ -57,13 +57,13 @@
     <div class="form-inline">
         <!-- RADIOS -->
         <div class="form-check form-check-inline">
-            @Html.RadioButtonFor(m => m.sCorrente, "true", new { @class = "form-check-input  ", @id = "idCorrente" })
-            @Html.Label("Corrente", new { @class = "form-check-label" })
+            @Html.RadioButtonFor(m => m.sCorrente, "true", new { @class = "form-check-input  ", @id = "idCapital" })
+            @Html.Label("Capital", new { @class = "form-check-label" })
 
         </div>
         <div class="form-check form-check-inline">
-            @Html.RadioButtonFor(m => m.sCorrente, "false", new { @class = "form-check-input  ", @id = "idCapital" })
-            @Html.Label("Capital", new { @class = "form-check-label" })
+            @Html.RadioButtonFor(m => m.sCorrente, "false", new { @class = "form-check-input  ", @id = "idCorrente" })
+            @Html.Label("Corrente", new { @class = "form-check-label" })
         </div>
     </div>
     <!-- Mensal -->
